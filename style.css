@@ -1,0 +1,90 @@
+/*
+ Theme Name:   Auditorium Theater Roosevelt University
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Twenty Fourteen Child Theme
+ Author:       Taproot Foundation (Eddie Moya, Kelly, Aisha Rickets)
+ Author URI:   http://taprootfoundation.com
+ Template:     twentytwelve
+ Version:      1.0.0
+ Text Domain:  twenty-twelve-child
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+body .site {      
+	margin-top: auto;    
+	border: 1px solid red;
+	background-color: transparent;
+	position: relative;                     
+	margin-left: auto;      
+	margin-right: auto;  
+	padding: 0;     
+	margin-bottom: 20px
+} 
+
+html body.custom-background {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header.site-header{
+	background-color: #fff;
+	padding: 0 40px;
+}
+
+header.site-header > *,
+footer .site-info {
+	width:960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body #main,
+footer {
+	background-color: rgba(255, 255, 255, .9);
+	padding: 0 40px;
+}
+
+body #main {
+	margin-top:30%;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+footer[role="contentinfo"]{
+	max-width: 100%;
+	margin-top: 0px;
+	background-color: #878787;
+	color:#fff;
+	border: none;
+	height: 80px;
+}
+
+footer[role="contentinfo"] a {
+	color:#fff;
+}
+
+#container-wrap-wrap{
+width:960px;
+}
+
+
+@media screen and (max-width: 960px) { 
+  body {
+	background-size: 960px;
+	background-position: left -200px;
+  }
+}
+
+@media screen and (min-width: 600px){
+	div.site {
+	max-width: 100%;
+	}
+}
