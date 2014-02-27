@@ -13,10 +13,10 @@
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
+/** HEADER, FOOTER, BODY LAYOUT **/
 
 body .site {      
 	margin-top: auto;    
-	border: 1px solid red;
 	background-color: transparent;
 	position: relative;                     
 	margin-left: auto;      
@@ -37,26 +37,23 @@ header.site-header{
 	padding: 0 40px;
 }
 
-header.site-header > *,
-footer .site-info {
-	width:960px;
-	margin-left: auto;
-	margin-right: auto;
+
+body #main {
+	margin-top:30%;
 }
 
 body #main,
-footer {
+footer .site{
 	background-color: rgba(255, 255, 255, .9);
 	padding: 0 40px;
 }
 
-body #main {
-	margin-top:30%;
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+.main-navigation li a {
+	line-height: 2.4;
 }
-
+.main-navigation li {
+	margin:	0 15px;
+}
 
 footer[role="contentinfo"]{
 	max-width: 100%;
@@ -64,7 +61,7 @@ footer[role="contentinfo"]{
 	background-color: #878787;
 	color:#fff;
 	border: none;
-	height: 80px;
+	height: 108px;
 }
 
 footer[role="contentinfo"] a {
@@ -72,15 +69,22 @@ footer[role="contentinfo"] a {
 }
 
 #container-wrap-wrap{
-width:960px;
+	width:880px;
 }
 
+@media screen and (min-width: 960px) { 
 
-@media screen and (max-width: 960px) { 
-  body {
-	background-size: 960px;
-	background-position: left -200px;
-  }
+	body #main,
+	header.site-header > *,
+	footer .site-info {
+		width: 880px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header.site-header > * {
+		width: 960px;
+	}
+
 }
 
 @media screen and (min-width: 600px){
@@ -88,3 +92,93 @@ width:960px;
 	max-width: 100%;
 	}
 }
+@media screen and (max-width: 600px){
+	html body.custom-background {
+		background-position: center 100px;
+		background-size: 100%;
+		background-attachment: scroll;
+	}
+
+}
+
+
+img.header-image {
+	color: #ffffff;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0
+}
+
+#header-spacer {
+	background-color: #000;
+	height: 10px;
+}
+
+.main-navigation {
+	margin-top: 0;
+}
+
+.main-navigation ul {
+	background-color: #000;
+	margin-bottom: 22px;
+}
+#nav-search {
+	float: right;
+	margin: 0 15px 0;
+}
+
+#nav-search div {
+	width: 200px
+}
+
+#nav-search input{
+	float: left;
+}
+#nav-search #s
+{
+	height: 7px;
+	margin: 3px 0;
+}
+#nav-search div{
+	height: 8px;
+}
+
+#nav-search #searchsubmit {
+	padding: 3px;
+}
+
+
+/** Font Styles, Colors, Backgrounds */
+
+.main-navigation .current-menu-item > a, 
+.main-navigation .current-menu-ancestor > a, 
+.main-navigation .current_page_item > a, 
+.main-navigation .current_page_ancestor > a,
+.main-navigation li a {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+
+
+/* Backgrounds */
+footer[role="contentinfo"] {
+background: rgb(109,109,109); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(109,109,109,1) 0%, rgba(155,155,155,1) 37%, rgba(178,178,178,1) 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,109,109,1)), color-stop(37%,rgba(155,155,155,1)), color-stop(99%,rgba(178,178,178,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(155,155,155,1) 37%,rgba(178,178,178,1) 99%);  Chrome10+,Safari5.1+ 
+background: -o-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(155,155,155,1) 37%,rgba(178,178,178,1) 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(155,155,155,1) 37%,rgba(178,178,178,1) 99%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(109,109,109,1) 0%,rgba(155,155,155,1) 37%,rgba(178,178,178,1) 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#b2b2b2',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+
+
+
+
+
+
