@@ -42,7 +42,20 @@
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 				</a>
+				<div id="header-right-rail">
+					<div class="buy-tickets">
+						<a href="#">
+							<span class="button-text">Buy Tickets</span>
+						</a>
+					</div>
+					<div class="donate">
+						<a href="#">
+							<span class="button-text">Donate</span>
+						</a>
+					</div>
+				</div>
 			</div>
+
 
 		<?php endif; ?>
 		<hgroup>
