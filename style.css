@@ -22,7 +22,7 @@ body .site {
 	margin-left: auto;      
 	margin-right: auto;  
 	padding: 0;     
-	margin-bottom: 20px
+	margin-bottom: 0;
 } 
 
 html body.custom-background {
@@ -34,7 +34,7 @@ html body.custom-background {
 
 header.site-header{
 	background-color: #fff;
-	padding: 0 40px;
+	padding: 0;
 }
 
 
@@ -56,12 +56,11 @@ footer .site{
 }
 
 footer[role="contentinfo"]{
-	max-width: 100%;
-	margin-top: 0px;
+	margin-top: 0;
+	padding-bottom: 0;
 	background-color: #878787;
 	color:#fff;
 	border: none;
-	height: 108px;
 }
 
 footer[role="contentinfo"] a {
@@ -173,7 +172,52 @@ background: -ms-linear-gradient(top,  rgba(109,109,109,1) 0%,rgba(155,155,155,1)
 background: linear-gradient(to bottom,  rgba(109,109,109,1) 0%,rgba(155,155,155,1) 37%,rgba(178,178,178,1) 99%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#b2b2b2',GradientType=0 ); /* IE6-9 */
 
+.menu-footer-nav-container {
+min-height: 100px;
+margin-bottom: 10px;
+}
 
+#menu-footer-nav .menu-item > a {
+	text-decoration: initial;
+}
+#menu-footer-nav .menu-item > a:hover {
+	text-decoration: underline;
+	color: #ffffff;
+}
+ 
+#menu-footer-nav .menu-item {
+	float: left;
+	margin-right: 20px;
+	height: 19px;
+}
+#menu-footer-nav > .menu-item > a {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.sub-menu {
+	margin-top: -5px;
+}
+
+#menu-footer-nav .sub-menu .menu-item {
+	float: none;
+}
+
+#menu-footer-nav .sub-menu .menu-item > a {
+	font-size: 10px;
+}
+
+#copyright {
+	font-size: 10px;
+	padding: 7px 0;
+}
+
+#footer-padding {
+	width: 960px;
+	background-color: #DAA520;
+	margin-left: auto;
+	margin-right: auto;
+	height: 12px;
 }
 
 
