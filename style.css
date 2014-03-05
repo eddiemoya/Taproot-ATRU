@@ -52,7 +52,7 @@ footer .site{
 	line-height: 2.4;
 }
 .main-navigation li {
-	margin:	0 15px;
+	margin: 0 0 0 16px;
 }
 
 footer[role="contentinfo"]{
@@ -111,6 +111,51 @@ img.header-image {
 #header-spacer {
 	background-color: #000;
 	height: 10px;
+}
+
+#header-right-rail a {
+	color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+
+#header-right-rail a {
+	width: 120px;
+	padding: 5px 0px;
+	display: block;
+}
+
+#header-right-rail a:hover{
+	color:#000000;
+	cursor: pointer;
+}
+#header-right-rail .donate {
+	background-color: orange;
+
+}
+
+#header-right-rail .buy-tickets a {
+	background-color: red;
+	height: 50px;
+}
+
+#header-right-rail .buy-tickets a .button-text {
+	position: absolute;
+	bottom: 11px;
+	width: 100%;
+	left: 0;
+}
+
+
+
+#header-right-rail  {
+	float:right;
 }
 
 .main-navigation {
