@@ -12,10 +12,11 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
-			<?php dynamic_sidebar( 'footer' ); ?>
-			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu' ) ); ?>
 
-<div id="copyright">&copy; 2014. Auditorium Theatre of Roosevelt University. All Rights Reserved.</div>
+			<?php dynamic_sidebar( 'footer' ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu', 'container_class' => 'menu-footer-nav-container') ); ?>
+		
+			<div id="copyright">&copy; 2014. Auditorium Theatre of Roosevelt University. All Rights Reserved.</div>
 		</div><!-- .site-info -->
 	
 		
