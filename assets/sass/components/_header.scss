@@ -1,0 +1,116 @@
+@import "config/_colors";
+@import "config/_fonts";
+
+header.site-header{
+	background-color: #fff;
+	padding: 0;
+
+	.header-image {
+		color: #ffffff;
+		border-radius: 0;
+		box-shadow: none;
+		margin: 0
+	}
+
+
+	.main-navigation {
+		margin-top: 0;
+
+		ul {
+			background-color: #000;
+			margin-bottom: 22px;
+
+			li {
+				margin: 0 0 0 20px;
+
+				a {
+					color: #ffffff;
+					font-size: 12px;
+					font-family: $ssp;
+					font-weight: bold;					
+					line-height: 2.4;
+
+					/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
+					:hover { 
+						color: $atru_gold; 
+					}
+				}
+			}
+
+
+
+
+			#nav-search {
+				float: right;
+				margin: 0 15px 0;
+
+				div {
+					width: 200px;
+					height: 8px;
+
+					input{
+						float: left;
+					}
+
+					#s {
+						height: 7px;
+						margin: 3px 0;
+					}
+
+					#searchsubmit {
+						padding: 2px;
+					}
+				}
+			}
+		}
+
+	}
+
+	#header-spacer {
+		background-color: #000;
+		height: 10px;
+	}
+
+	#header-right-rail {
+		float:right;
+		a {
+			width: 120px;
+			padding: 5px 0px;
+			margin-bottom: 12px;
+			position: relative;
+			display: block;
+
+
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: bold;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			
+			:hover{
+				color:#000000;
+				cursor: pointer;
+			}
+		}
+
+		.donate {
+			background-color: $atru_gold;
+		}
+
+		.buy-tickets a {
+			background-color: $atru_red;
+			height: 50px;
+
+			.button-text {
+				position: absolute;
+				bottom: 11px;
+				width: 100%;
+				left: 0;
+			}
+		}
+	}
+
+}
+
+

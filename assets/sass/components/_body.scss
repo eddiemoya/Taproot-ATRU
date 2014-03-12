@@ -1,0 +1,12 @@
+html body.custom-background {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body #main {
+	background-color: rgba(255, 255, 255, .87);
+	margin-top:30%;
+	padding: 0 40px;
+}

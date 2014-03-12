@@ -1,0 +1,45 @@
+@import "config/_colors";
+
+@media screen and (min-width: 960px) { 
+
+	body #main,
+	header.site-header > *,
+	footer .site-info {
+		width: 880px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	header.site-header > * {
+		width: 960px;
+	}
+
+}
+
+@media screen and (min-width: 600px){
+	div.site {
+		max-width: 100%;
+	}
+	.main-navigation li a:hover {
+		color:$atru_gold;
+	}
+}
+@media screen and (max-width: 600px){
+	html body.custom-background {
+		background-position: center 100px;
+		background-size: 100%;
+		background-attachment: scroll;
+	}
+
+
+}
+
+
+body .site {    
+	background-color: transparent;  
+	margin-top: auto;    
+	position: relative;                     
+	margin-left: auto;      
+	margin-right: auto;  
+	padding: 0;     
+	margin-bottom: 0;
+} 
