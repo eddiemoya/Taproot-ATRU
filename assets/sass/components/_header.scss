@@ -1,6 +1,3 @@
-@import "config/_colors";
-@import "config/_fonts";
-
 header.site-header{
 	background-color: #fff;
 	padding: 0;
@@ -31,14 +28,15 @@ header.site-header{
 					line-height: 2.4;
 
 					/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
-					:hover { 
+					&:hover { 
 						color: $atru_gold; 
 					}
+
 				}
+				&.current-menu-item a { 
+						color: $atru_gold; 
+					}
 			}
-
-
-
 
 			#nav-search {
 				float: right;
@@ -50,15 +48,13 @@ header.site-header{
 
 					input{
 						float: left;
-					}
-
-					#s {
-						height: 7px;
-						margin: 3px 0;
-					}
-
-					#searchsubmit {
-						padding: 2px;
+						&#s {
+							height: 7px;
+							margin: 3px 0;
+						}
+						&#searchsubmit {
+							padding: 2px;
+						}
 					}
 				}
 			}
@@ -83,23 +79,24 @@ header.site-header{
 
 			color: #ffffff;
 			font-size: 15px;
+			font-family: $ssp;
 			font-weight: bold;
 			text-align: center;
 			text-transform: uppercase;
 			text-decoration: none;
 			
-			:hover{
+			&:hover{
 				color:#000000;
 				cursor: pointer;
 			}
 		}
 
 		.donate {
-			background-color: $atru_gold;
+			@include background-image(linear-gradient(top, rgba(250,145,26,0.87) 0%,rgba(250,145,26,0.87) 63%,rgba(216,107,23,0.87) 100%));		
 		}
 
 		.buy-tickets a {
-			background-color: $atru_red;
+			@include background-image(linear-gradient(top, rgba(198,9,16,0.87) 0%,rgba(198,9,16,0.87) 63%,rgba(150,10,12,0.87) 100%));
 			height: 50px;
 
 			.button-text {
