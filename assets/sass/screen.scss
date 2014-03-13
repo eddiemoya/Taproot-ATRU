@@ -4,13 +4,16 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic);
-@import "compass/reset";
 
+@import "compass/reset";
+@import "compass";
+
+@import "config/fonts";
 @import "config/colors";
-@import "components/_general";
-@import "components/_header";
-@import "components/_body";
-@import "components/_footer";
+@import "components/general";
+@import "components/header";
+@import "components/body";
+@import "components/footer";
 
 
 
