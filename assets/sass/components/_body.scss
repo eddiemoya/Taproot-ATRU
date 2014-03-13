@@ -1,12 +1,75 @@
-html body.custom-background {
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-attachment: fixed;
-	background-size: cover;
+
+html body {
+	&.custom-background {
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+	#hero {
+		width: 960px;
+		margin-right:	auto;
+		margin-left:	auto;
+		position: relative;
+		.entry-header {
+			width: 65%;
+			padding: 1px 40px;
+			margin: 0;
+			background-color: $trans_grey;
+
+			position: absolute;
+			bottom: 2px;
+
+			h1 {
+				color: #ffffff;
+				font-family: $ssp;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+	#main {
+		width: 920px; /* EXTRA */
+		font-family: $ssp;
+		background-color: rgba(255, 255, 255, .87);
+		padding: 0 0 0 40px;
+		margin-top: -2px; /* THIS SHOULD NOT BE NECESSARY */
+
+		#spacer {
+			height: 10px;
+			background-color: rgba(0, 0, 0, .30);
+		}
+		#primary {
+			margin-top: 0;
+			#content {
+				.entry-content{
+					h2 {
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		#secondary {
+			margin-top: 0;
+			aside {
+
+				h3 {
+					color: #000000;
+					font-size: 18px;
+					padding: 0px 10px;
+					text-transform: uppercase;
+					background-color:  rgba(0, 0, 0, .30);
+
+
+				}
+			}
+		}
+	}
+
+
+
+	&#single-performances {
+		margin-top:30%;
+	}
 }
 
-body #main {
-	background-color: rgba(255, 255, 255, .87);
-	margin-top:30%;
-	padding: 0 40px;
-}
