@@ -46,12 +46,12 @@
 				</a>
 				<div id="header-right-rail">
 					<div class="buy-tickets">
-						<a href="#">
+						<a href="<?php echo get_page_link(get_page_by_title('Buy Tickets')->ID) ?>" alt="Buy Tickets Here">
 							<span class="button-text">Buy Tickets</span>
 						</a>
 					</div>
 					<div class="donate">
-						<a href="#">
+						<a href="<?php echo get_page_link(get_page_by_title('Donate')->ID) ?>" alt="Donate Here">
 							<span class="button-text">Donate</span>
 						</a>
 					</div>
@@ -75,5 +75,7 @@
 		</div>
 
 	</header><!-- #masthead -->
+
+	<?php get_template_part( 'hero', $post->post_type ); ?>
 
 	<div id="main" class="wrapper">
