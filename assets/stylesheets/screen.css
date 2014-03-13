@@ -113,32 +113,32 @@ body .site {
   margin-bottom: 0;
 }
 
-/* line 4, ../sass/components/_header.scss */
+/* line 1, ../sass/components/_header.scss */
 header.site-header {
   background-color: #fff;
   padding: 0;
 }
-/* line 8, ../sass/components/_header.scss */
+/* line 5, ../sass/components/_header.scss */
 header.site-header .header-image {
   color: #ffffff;
   border-radius: 0;
   box-shadow: none;
   margin: 0;
 }
-/* line 16, ../sass/components/_header.scss */
+/* line 13, ../sass/components/_header.scss */
 header.site-header .main-navigation {
   margin-top: 0;
 }
-/* line 19, ../sass/components/_header.scss */
+/* line 16, ../sass/components/_header.scss */
 header.site-header .main-navigation ul {
   background-color: #000;
   margin-bottom: 22px;
 }
-/* line 23, ../sass/components/_header.scss */
+/* line 20, ../sass/components/_header.scss */
 header.site-header .main-navigation ul li {
   margin: 0 0 0 20px;
 }
-/* line 26, ../sass/components/_header.scss */
+/* line 23, ../sass/components/_header.scss */
 header.site-header .main-navigation ul li a {
   color: #ffffff;
   font-size: 12px;
@@ -147,43 +147,47 @@ header.site-header .main-navigation ul li a {
   line-height: 2.4;
   /* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
 }
-/* line 34, ../sass/components/_header.scss */
-header.site-header .main-navigation ul li a :hover {
+/* line 31, ../sass/components/_header.scss */
+header.site-header .main-navigation ul li a:hover {
   color: #faa61a;
 }
-/* line 43, ../sass/components/_header.scss */
+/* line 36, ../sass/components/_header.scss */
+header.site-header .main-navigation ul li.current-menu-item a {
+  color: #faa61a;
+}
+/* line 41, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search {
   float: right;
   margin: 0 15px 0;
 }
-/* line 47, ../sass/components/_header.scss */
+/* line 45, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search div {
   width: 200px;
   height: 8px;
 }
-/* line 51, ../sass/components/_header.scss */
+/* line 49, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search div input {
   float: left;
 }
-/* line 55, ../sass/components/_header.scss */
-header.site-header .main-navigation ul #nav-search div #s {
+/* line 51, ../sass/components/_header.scss */
+header.site-header .main-navigation ul #nav-search div input#s {
   height: 7px;
   margin: 3px 0;
 }
-/* line 60, ../sass/components/_header.scss */
-header.site-header .main-navigation ul #nav-search div #searchsubmit {
+/* line 55, ../sass/components/_header.scss */
+header.site-header .main-navigation ul #nav-search div input#searchsubmit {
   padding: 2px;
 }
-/* line 69, ../sass/components/_header.scss */
+/* line 65, ../sass/components/_header.scss */
 header.site-header #header-spacer {
   background-color: #000;
   height: 10px;
 }
-/* line 74, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 header.site-header #header-right-rail {
   float: right;
 }
-/* line 76, ../sass/components/_header.scss */
+/* line 72, ../sass/components/_header.scss */
 header.site-header #header-right-rail a {
   width: 120px;
   padding: 5px 0px;
@@ -192,26 +196,35 @@ header.site-header #header-right-rail a {
   display: block;
   color: #ffffff;
   font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 91, ../sass/components/_header.scss */
-header.site-header #header-right-rail a :hover {
+/* line 88, ../sass/components/_header.scss */
+header.site-header #header-right-rail a:hover {
   color: #000000;
   cursor: pointer;
 }
-/* line 97, ../sass/components/_header.scss */
+/* line 94, ../sass/components/_header.scss */
 header.site-header #header-right-rail .donate {
-  background-color: #faa61a;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(250, 145, 26, 0.87)), color-stop(63%, rgba(250, 145, 26, 0.87)), color-stop(100%, rgba(216, 107, 23, 0.87)));
+  background-image: -webkit-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
+  background-image: -moz-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
+  background-image: -o-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
+  background-image: linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
 }
-/* line 101, ../sass/components/_header.scss */
+/* line 98, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a {
-  background-color: #c9252c;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(198, 9, 16, 0.87)), color-stop(63%, rgba(198, 9, 16, 0.87)), color-stop(100%, rgba(150, 10, 12, 0.87)));
+  background-image: -webkit-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
+  background-image: -moz-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
+  background-image: -o-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
+  background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   height: 50px;
 }
-/* line 105, ../sass/components/_header.scss */
+/* line 102, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a .button-text {
   position: absolute;
   bottom: 11px;
@@ -219,51 +232,96 @@ header.site-header #header-right-rail .buy-tickets a .button-text {
   left: 0;
 }
 
-/* line 1, ../sass/components/_body.scss */
+/* line 3, ../sass/components/_body.scss */
 html body.custom-background {
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
   background-size: cover;
 }
-
-/* line 8, ../sass/components/_body.scss */
-body #main {
+/* line 9, ../sass/components/_body.scss */
+html body #hero {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+/* line 14, ../sass/components/_body.scss */
+html body #hero .entry-header {
+  width: 65%;
+  padding: 1px 40px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  bottom: 2px;
+}
+/* line 23, ../sass/components/_body.scss */
+html body #hero .entry-header h1 {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 31, ../sass/components/_body.scss */
+html body #main {
+  width: 920px;
+  /* EXTRA */
+  font-family: "Source Sans Pro", sans-serif;
   background-color: rgba(255, 255, 255, 0.87);
+  padding: 0 0 0 40px;
+  margin-top: -2px;
+  /* THIS SHOULD NOT BE NECESSARY */
+}
+/* line 38, ../sass/components/_body.scss */
+html body #main #spacer {
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 42, ../sass/components/_body.scss */
+html body #main #primary {
+  margin-top: 0;
+}
+/* line 46, ../sass/components/_body.scss */
+html body #main #primary #content .entry-content h2 {
+  font-weight: bold;
+}
+/* line 52, ../sass/components/_body.scss */
+html body #main #secondary {
+  margin-top: 0;
+}
+/* line 56, ../sass/components/_body.scss */
+html body #main #secondary aside h3 {
+  color: #000000;
+  font-size: 18px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* line 71, ../sass/components/_body.scss */
+html body#single-performances {
   margin-top: 30%;
-  padding: 0 40px;
 }
 
-/* line 4, ../sass/components/_footer.scss */
+/* line 2, ../sass/components/_footer.scss */
 footer[role="contentinfo"] {
   width: 960px;
   color: #fff;
   border: none;
   margin-top: 0;
   padding-bottom: 0;
-  background: #6d6d6d;
-  /* Old browsers */
-  background: -moz-linear-gradient(top, rgba(109, 109, 109, 0.9) 0%, rgba(155, 155, 155, 0.9) 37%, rgba(178, 178, 178, 0.9) 99%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(109, 109, 109, 0.9)), color-stop(37%, rgba(155, 155, 155, 0.9)), color-stop(99%, #b2b2b2));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(109, 109, 109, 0.9) 0%, rgba(155, 155, 155, 0.9) 37%, rgba(178, 178, 178, 0.9) 99%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(109, 109, 109, 0.9) 0%, rgba(155, 155, 155, 0.9) 37%, rgba(178, 178, 178, 0.9) 99%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(109, 109, 109, 0.9) 0%, rgba(155, 155, 155, 0.9) 37%, rgba(178, 178, 178, 0.9) 99%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(109, 109, 109, 0.9) 0%, rgba(155, 155, 155, 0.9) 37%, rgba(178, 178, 178, 0.9) 99%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6d6d6d', endColorstr='#b2b2b2',GradientType=0 );
-  /* IE6-9 */
+  /*@include filter-gradient(#cc4f4f4f, #cc7e7e7e, vertical); //IE6-9 */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(79, 79, 79, 0.87)), color-stop(37%, rgba(126, 126, 126, 0.87)), color-stop(99%, rgba(126, 126, 126, 0.87)), color-stop(100%, rgba(126, 126, 126, 0.87)));
+  background-image: -webkit-linear-gradient(top, rgba(79, 79, 79, 0.87) 0%, rgba(126, 126, 126, 0.87) 37%, rgba(126, 126, 126, 0.87) 99%, rgba(126, 126, 126, 0.87) 100%);
+  background-image: -moz-linear-gradient(top, rgba(79, 79, 79, 0.87) 0%, rgba(126, 126, 126, 0.87) 37%, rgba(126, 126, 126, 0.87) 99%, rgba(126, 126, 126, 0.87) 100%);
+  background-image: -o-linear-gradient(top, rgba(79, 79, 79, 0.87) 0%, rgba(126, 126, 126, 0.87) 37%, rgba(126, 126, 126, 0.87) 99%, rgba(126, 126, 126, 0.87) 100%);
+  background-image: linear-gradient(top, rgba(79, 79, 79, 0.87) 0%, rgba(126, 126, 126, 0.87) 37%, rgba(126, 126, 126, 0.87) 99%, rgba(126, 126, 126, 0.87) 100%);
 }
-/* line 21, ../sass/components/_footer.scss */
+/* line 12, ../sass/components/_footer.scss */
 footer[role="contentinfo"] #copyright {
   font-size: 10px;
   padding: 7px 0;
 }
-/* line 26, ../sass/components/_footer.scss */
+/* line 17, ../sass/components/_footer.scss */
 footer[role="contentinfo"] #footer-padding {
   width: 960px;
   background-color: #DAA520;
@@ -271,40 +329,50 @@ footer[role="contentinfo"] #footer-padding {
   margin-right: auto;
   height: 12px;
 }
-/* line 34, ../sass/components/_footer.scss */
+/* line 25, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container {
+  font-size: 11px;
+  font-family: "Source Sans Pro", sans-serif;
   min-height: 100px;
   margin-bottom: 10px;
 }
-/* line 39, ../sass/components/_footer.scss */
+/* line 32, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav a {
   color: #ffffff;
-  font-size: 11px;
   text-decoration: initial;
 }
-/* line 44, ../sass/components/_footer.scss */
+/* line 35, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
-/* line 49, ../sass/components/_footer.scss */
+/* line 41, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav .menu-item {
   float: left;
   margin-right: 20px;
   height: 19px;
 }
-/* line 54, ../sass/components/_footer.scss */
-footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav .menu-item-has-children > a {
+/* line 46, ../sass/components/_footer.scss */
+footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav .menu-item.menu-item-has-children > a {
   font-weight: bold;
   font-size: 13px;
 }
-/* line 58, ../sass/components/_footer.scss */
+/* line 51, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav .sub-menu {
   margin-top: -5px;
 }
-/* line 60, ../sass/components/_footer.scss */
+/* line 53, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-nav-container #menu-footer-nav .sub-menu .menu-item {
   float: none;
+}
+
+/* line 61, ../sass/components/_footer.scss */
+#footer-padding {
+  width: 960px;
+  background-color: #faa61a;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12px;
 }
 
 /** HEADER, FOOTER, BODY LAYOUT **/
