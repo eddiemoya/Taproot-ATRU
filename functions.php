@@ -23,7 +23,16 @@ add_action( 'widgets_init', 'atru_widgets_init' );
 function atru_widgets_init() {
 
 	register_sidebar( array(
-		'name' => __( 'Footer Widget Area', 'twentytwelve' ),
+		'name' => __( 'Performance Footer Banner', 'twentytwelve' ),
+		'id' => 'performance-footer',
+		'description' => __( 'Appears on at the bottom of all performance pages above the footer', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Footer Navigation', 'twentytwelve' ),
 		'id' => 'footer',
 		'description' => __( 'Appears on at the bottom of all pages', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -73,3 +82,4 @@ function atru_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
 }
+
