@@ -271,25 +271,26 @@ html body #main {
   padding: 0 0 0 40px;
   margin-top: -2px;
   /* THIS SHOULD NOT BE NECESSARY */
+  position: relative;
 }
-/* line 38, ../sass/components/_body.scss */
+/* line 39, ../sass/components/_body.scss */
 html body #main #spacer {
   height: 10px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 42, ../sass/components/_body.scss */
+/* line 43, ../sass/components/_body.scss */
 html body #main #primary {
   margin-top: 0;
 }
-/* line 46, ../sass/components/_body.scss */
+/* line 47, ../sass/components/_body.scss */
 html body #main #primary #content .entry-content h2 {
   font-weight: bold;
 }
-/* line 52, ../sass/components/_body.scss */
+/* line 53, ../sass/components/_body.scss */
 html body #main #secondary {
   margin-top: 0;
 }
-/* line 56, ../sass/components/_body.scss */
+/* line 57, ../sass/components/_body.scss */
 html body #main #secondary aside h3 {
   color: #000000;
   font-size: 18px;
@@ -297,9 +298,56 @@ html body #main #secondary aside h3 {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 71, ../sass/components/_body.scss */
-html body#single-performances {
+/* line 73, ../sass/components/_body.scss */
+html body.page-template-template-performance-php #hero {
   margin-top: 30%;
+}
+/* line 82, ../sass/components/_body.scss */
+html body #footer-banner.widget-area {
+  margin: 0;
+}
+@media screen and (min-width: 600px) {
+  /* line 79, ../sass/components/_body.scss */
+  html body #footer-banner {
+    float: left;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+/* line 91, ../sass/components/_body.scss */
+html body #footer-banner .widget_wrapper {
+  float: left;
+  width: 90%;
+  padding: 0 4%;
+}
+/* line 96, ../sass/components/_body.scss */
+html body #footer-banner .widget {
+  float: left;
+  width: 31%;
+  margin-left: 12px;
+  position: relative;
+}
+/* line 103, ../sass/components/_body.scss */
+html body #footer-banner .widget.widget_simpleimage .simple-image, html body #footer-banner .widget.widget_simpleimage .more {
+  margin: 0;
+}
+/* line 106, ../sass/components/_body.scss */
+html body #footer-banner .widget.widget_simpleimage .more {
+  background-color: #000000;
+  text-indent: 11px;
+  line-height: 1.6;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 114, ../sass/components/_body.scss */
+html body #footer-banner .widget.widget_simpleimage .more a {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* line 2, ../sass/components/_footer.scss */

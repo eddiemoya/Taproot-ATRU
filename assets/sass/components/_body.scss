@@ -34,6 +34,7 @@ html body {
 		background-color: rgba(255, 255, 255, .87);
 		padding: 0 0 0 40px;
 		margin-top: -2px; /* THIS SHOULD NOT BE NECESSARY */
+		position: relative;
 
 		#spacer {
 			height: 10px;
@@ -68,8 +69,58 @@ html body {
 
 
 
-	&#single-performances {
-		margin-top:30%;
+	&.page-template-template-performance-php {
+		#hero {
+			margin-top:30%;
+		}
+
+	}
+
+	#footer-banner {
+
+
+		&.widget-area {
+			margin: 0;
+		}
+		@media screen and (min-width: 600px) {
+			float:left;
+			width:	70%;
+			position: absolute;
+			bottom: 0;
+		}
+		.widget_wrapper {
+			float: left;
+			width: 90%;
+			padding: 0 4%;
+		}
+		.widget {
+			float: left;
+			width: 31%;
+			margin-left: 12px;
+			position: relative;
+
+			&.widget_simpleimage {
+				.simple-image, .more {
+					margin: 0;
+				}
+				.more{
+					background-color: #000000;
+					text-indent: 11px;
+					line-height: 1.6;
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+
+					a {
+						font-size: 13px;
+						font-weight: bold;
+						text-transform: uppercase;
+						text-decoration: none;
+						color: #ffffff;
+					}
+				}
+			}
+		}
 	}
 }
 
