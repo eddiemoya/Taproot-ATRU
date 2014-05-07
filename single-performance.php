@@ -21,6 +21,6 @@ get_header('performance'); ?>
 
 	</div><!-- #primary -->
 
-<?php get_sidebar('performance-sidebar'); ?>
+<?php get_sidebar('performance'); ?>
 <?php get_sidebar('performance-footer'); ?>
 <?php get_footer(); ?>
