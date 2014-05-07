@@ -1,7 +1,5 @@
 <?php
 /**
- * Template Name: Performance
- * The Template for displaying all single posts
  *
  * @package WordPress
  * @subpackage Twenty_Twelve
@@ -15,7 +13,7 @@ get_header('performance'); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', $post->post_type ); ?>
+				<?php get_template_part( 'content', 'page' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
@@ -23,6 +21,6 @@ get_header('performance'); ?>
 
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('performance-sidebar'); ?>
 <?php get_sidebar('performance-footer'); ?>
 <?php get_footer(); ?>

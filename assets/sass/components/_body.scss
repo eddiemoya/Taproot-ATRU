@@ -6,34 +6,122 @@ html body {
 		background-attachment: fixed;
 		background-size: cover;
 	}
+	&.home {
+		#hero {
+			.entry-header h1 {
+				/*position: relative;*/
+			}
+		}
+	}
+	&.page-on-our-stage {
+		#primary {
+			margin-left: -40px;
+			width: 960px;
+			#content {
+				margin-top: 30px;
+			}
+			header {
+				h1 {
+					color: #000000;
+					font-size: 16px;
+					font-weight: bold;
+					text-transform: uppercase;
+					background-color:  rgba(0, 0, 0, .30);
+
+					width: 33%;
+					padding: 10px 0 0;
+					text-indent: 40px;		
+
+				}
+			}
+		}
+		.category {
+			float: left;
+			width: 100%;
+			article {
+				float: left;
+				width: 231px;
+				margin: 0 12px 10px 0;
+
+				&:last-child {
+					margin-right: 0;
+				}
+				img {
+					width: 100%;
+					border-radius: 0;
+				}
+				.entry-header {
+					height: 40px;
+					padding-top: 5px;
+					margin-bottom: 0; 
+					h2 {
+						font-size: 14px;
+						font-weight: bold;
+						text-align: center;
+					}
+				}
+				.button-list {
+					margin-left: auto;
+					margin-right: auto;
+					width: 158px;
+				}
+				.button {
+					width: 63px;
+					padding: 6px;
+					display: inline-block;
+
+					font-size: 11px;
+					font-weight: bold;
+					text-align: center;
+
+					color: #FFFFFF;
+					background-color: #000000;
+					text-transform: uppercase;
+					text-decoration: none;	
+
+					&.buy-now{
+						background-color: $atru_red;
+					}		
+				}
+				footer.entry-meta {
+					margin: -27px 0 0 4px;
+				}
+			
+			}
+
+		}
+	}
 	#hero {
 		width: 960px;
 		margin-right:	auto;
 		margin-left:	auto;
 		position: relative;
+
+
 		.entry-header {
-			width: 65%;
-			padding: 1px 40px;
+			clear: both;
 			margin: 0;
-			background-color: $trans_grey;
+			h1{
+				width: 55%;
+				padding: 1px 40px;
 
-			position: absolute;
-			bottom: 2px;
+				background-color: $trans_grey;
+				position: absolute;
+				bottom: 0px;
 
-			h1 {
 				color: #ffffff;
 				font-family: $ssp;
 				font-weight: bold;
 				text-transform: uppercase;
 			}
+
 		}
 	}
 	#main {
 		width: 920px; /* EXTRA */
 		font-family: $ssp;
-		background-color: rgba(255, 255, 255, .87);
+		background-color: $trans_white;
 		padding: 0 0 0 40px;
-		margin-top: -2px; /* THIS SHOULD NOT BE NECESSARY */
 		position: relative;
 
 		#spacer {
@@ -52,6 +140,9 @@ html body {
 		}
 		#secondary {
 			margin-top: 0;
+			&.widget-area {
+				width: 32%;
+			}
 			aside {
 
 				h3 {
@@ -60,28 +151,56 @@ html body {
 					padding: 0px 10px;
 					text-transform: uppercase;
 					background-color:  rgba(0, 0, 0, .30);
-
-
-				}
+				} 
 			}
 		}
 	}
 
 
 
-	&.page-template-template-performance-php {
+	&.single-performance {
 		#hero {
 			margin-top:30%;
 		}
 
 	}
 
-	#footer-banner {
+	#hero {
+		.widget-banner {
+			@media screen and (min-width: 600px) {
+				width:	100%;
+				margin-top: 6px;
+				position: relative;
+				background-color: $trans_white;
+			}
 
+			.widget {
+				margin-left: 50px;
+				&:first-child:nth-last-child(3) {
+	    			width: 25%;
+				}
+				&:first-child:nth-last-child(3) {
+					~ .widget {
+	    				width: 25%;
+	    			}
+				}
+				.more a {
+					text-transform: none;
+				}
+			}
+		}
+	}
+
+	.widget-banner {
+
+		/*
+		 * version of banner in hero, is grouped with hero related styles.
+		 */
 
 		&.widget-area {
 			margin: 0;
 		}
+
 		@media screen and (min-width: 600px) {
 			float:left;
 			width:	70%;
@@ -98,6 +217,40 @@ html body {
 			width: 31%;
 			margin-left: 12px;
 			position: relative;
+
+			&:first-child:nth-last-child(1), {
+    			width: 90%;
+			}
+
+
+			&:first-child:nth-last-child(2) {
+    			width: 45%;
+			}
+			&:first-child:nth-last-child(2) {
+				~ .widget {
+    				width: 45%;
+    			}
+			}
+
+			&:first-child:nth-last-child(3) {
+    			width: 31%;
+			}
+			&:first-child:nth-last-child(3) {
+				~ .widget {
+    				width: 31%;
+    			}
+			}
+
+			&:first-child:nth-last-child(4) {
+    			width: 20%;
+			}
+			&:first-child:nth-last-child(4) {
+				~ .widget {
+    				width: 20%;
+    			}
+			}
+
+
 
 			&.widget_simpleimage {
 				.simple-image, .more {

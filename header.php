@@ -75,7 +75,7 @@
 		</div>
 
 	</header><!-- #masthead -->
-
-	<?php get_template_part( 'hero', $post->post_type ); ?>
+	<?php $context = (is_front_page()) ? 'front-page' : $post->post_type; ?>
+	<?php get_template_part( 'hero', $context ); ?>
 
 	<div id="main" class="wrapper">

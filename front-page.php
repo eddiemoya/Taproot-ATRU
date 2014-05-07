@@ -11,12 +11,17 @@
 get_header(); 
 
 $queried_object = get_queried_object();
-query_posts(array(
-		'orderby' => 'menu_order', 
-		'order' => 'ASC',
-		'post_parent' => $queried_object->ID, 
-		'post_type' => 'page'
-));
+query_posts(
+	array(
+		'tax_query' => array(
+			array(
+				'taxonomy' => 'category',
+				'field' => 'slug',
+				'terms' => array('updates')
+			)
+		)
+	)
+);
 ?>
 	<div id="spacer">&nbsp;</div>
 	<div id="primary" class="site-content">
@@ -38,5 +43,6 @@ query_posts(array(
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('front-page-sidebar'); ?>
+<?php get_sidebar('front-page-footer');  ?>
 <?php get_footer(); ?>
