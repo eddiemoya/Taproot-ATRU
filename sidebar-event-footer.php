@@ -9,14 +9,14 @@
  * @since Twenty Twelve 1.0
  */
 
-// $sidebar = (is_front_page()) ? 'front-page-footer' : 'performance-footer';
+// $sidebar = (is_front_page()) ? 'front-page-footer' : 'events-footer';
 
 ?>
 
-	<?php if ( is_active_sidebar( 'performance-footer' ) ) : ?>
+	<?php if ( is_active_sidebar( 'event-footer' ) ) : ?>
 		<div id="footer-banner" class="widget-banner widget-area" role="complementary">
 			<div class="widget_wrapper">
-				<?php dynamic_sidebar( 'performance-footer' ); ?>
+				<?php dynamic_sidebar( 'event-footer' ); ?>
 			</div>
 		</div><!-- #secondary -->
 	<?php endif; ?>

@@ -8,23 +8,23 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
-$featured_video_url = get_post_meta( get_the_ID(), 'omebed_featured_video');
+$featured_video_url = get_post_meta( get_the_ID(), 'omebed_featured_video', true);
 $featured_video_url = str_replace('https', 'http', $featured_video_url);
-$featured_video = wp_oembed_get($featured_video_url, array('width'=>'365'));
+$featured_video = wp_oembed_get('http://www.youtube.com/watch?v=VS46DZe5usY', array('width'=>'365'));
 
 ?>
 
-	<?php if ( is_active_sidebar( 'performance-right-rail' ) ) : ?>
+	<?php if ( is_active_sidebar( 'event-right-rail' ) ) : ?>
 		<div id="secondary" class="widget-area" role="complementary">
 
-			<?php  if(!empty($featured_video)) : ?>
+			<?php //  if(!empty($featured_video)) : ?>
 				<aside id="featured-video" class="widget">
 					<h3 class="widget-title">Promotional Video</h3>
-					<?php echo $featured_video; ?>
+					<?php echo $featured_video; echo $featured_video_url; ?>
 				</aside>
-			<?php endif; ?>
+			<?php //endif; ?>
 
-			<?php dynamic_sidebar( 'performance-right-rail' ); ?>
+			<?php dynamic_sidebar( 'event-right-rail' ); ?>
 				
 			
 		</div><!-- #secondary -->

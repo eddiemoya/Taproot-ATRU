@@ -2,23 +2,20 @@
 get_header(); 
 
 $top = get_category_by_slug('top');
-$categories = get_categories(array(
-	'parent' => $top->term_id
-));
-
+$event_types = get_terms('event_type', array(parent => 0));
 ?>
 	<div id="spacer">&nbsp;</div>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			
 
-				<?php foreach($categories as $cat) : ?>
+				<?php foreach($event_types as $event_type) : ?>
 
-				<?php $events = new WP_Query(array('category'=>$cat->term_id)); ?>
+				<?php $events = new WP_Query(array('event_type'=>$event_type->slug)); ?>
 
-				<section id='category-<?php echo $cat->term_id; ?>' class="category">
+				<section id='category-<?php echo $event_type->term_id; ?>' class="category">
 					<header class='category-header'>
-						<h1 class="entry-title"><?php echo $cat->name; ?> @ The Auditorium</h1>
+						<h1 class="entry-title"><?php echo $event_type->name; ?> @ The Auditorium</h1>
 					</header>
 					<div id="spacer">&nbsp;</div>
 					<?php if($events->have_posts()) : ?>

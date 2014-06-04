@@ -61,12 +61,12 @@ html body {
 					}
 				}
 				.button-list {
-					margin-left: auto;
+	/*				margin-left: auto;
 					margin-right: auto;
-					width: 158px;
+					width: 158px;*/
 				}
 				.button {
-					width: 63px;
+/*					width: 63px;
 					padding: 6px;
 					display: inline-block;
 
@@ -77,10 +77,10 @@ html body {
 					color: #FFFFFF;
 					background-color: #000000;
 					text-transform: uppercase;
-					text-decoration: none;	
+					text-decoration: none;*/	
 
-					&.buy-now{
-						background-color: $atru_red;
+					&.learn-more{
+						background-color: #000000;
 					}		
 				}
 				footer.entry-meta {
@@ -141,7 +141,7 @@ html body {
 		#secondary {
 			margin-top: 0;
 			&.widget-area {
-				width: 32%;
+				width: 34%;
 			}
 			aside {
 
@@ -155,12 +155,96 @@ html body {
 			}
 		}
 	}
+	.widget {
+		&.upcoming-events {
+			li {
+				float: left;
+				margin-bottom: 20px;
+			}
+			img {
+				width: 120px;
+				float: left;
+			}
+			.entry-header {
+				width: 170px;
+				float: left;
+				margin: 0 10px;
+
+				.entry-title {
+					font-size: 17px;
+					font-weight: normal;
+					line-height: 0.9;
+				}
+				span {
+					font-size: 14px;
+					font-weight: bold;
+					display: block;
+				}
+			}
+			.button-list {
+				float: left;
+				margin: 2px 10px;
+				line-height: 1;
+				.button {
+					color: #FFFFFF;
+					&.learn-more {
+						background-color: $atru_gold;
+					}
+				}
+			}
 
 
+		}
+	}
 
-	&.single-performance {
+	.button-list {
+		margin-left: auto;
+		margin-right: auto;
+		width: 158px;
+	
+		.button {
+			width: 63px;
+			padding: 6px;
+			display: inline-block;
+
+			font-size: 11px;
+			font-weight: bold;
+			text-align: center;
+
+			color: #FFFFFF;
+			background-color: $atru_red;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+
+
+	&.single-event {
 		#hero {
 			margin-top:30%;
+		}
+		#primary {
+			.event-list li {
+				color: #000;
+				font-weight: bold;
+				font-size: 18px;
+
+				line-height: 1.4;
+				a {
+					width: 100px;
+					float: right;
+					display: inline;
+
+					
+					color: #FFFFFF;
+
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					@include background-image(linear-gradient(top, rgba(198,9,16,0.87) 0%,rgba(198,9,16,0.87) 63%,rgba(150,10,12,0.87) 100%));
+				}
+			}
 		}
 
 	}
@@ -191,6 +275,14 @@ html body {
 		}
 	}
 
+	#hero-banner {
+			.widget_wrapper {
+				width: 100%;
+				padding: 0 2%;
+			}
+	
+	}
+
 	.widget-banner {
 
 		/*
@@ -209,8 +301,8 @@ html body {
 		}
 		.widget_wrapper {
 			float: left;
-			width: 90%;
-			padding: 0 4%;
+			width: 80%;
+			/*padding: 0 4%;*/
 		}
 		.widget {
 			float: left;

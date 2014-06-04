@@ -10,6 +10,7 @@ footer[role="contentinfo"] {
 	@include background-image(linear-gradient(top,  rgba(79,79,79,0.87) 0%,rgba(126,126,126,0.87) 37%,rgba(126,126,126,0.87) 99%,rgba(126,126,126,0.87) 100%));
 
 	#copyright {
+		clear: both;
 		font-size: 10px;
 		padding: 7px 0;
 	}
@@ -23,12 +24,13 @@ footer[role="contentinfo"] {
 	}
 
 	.menu-footer-nav-container {
+		float: left;
 		font-size: 11px;
 		font-family: $ssp;
 		min-height: 100px;
 		margin-bottom: 10px;
 
-		#menu-footer-nav {
+		#footer-navigation {
 			a {
 				color: #ffffff;
 				text-decoration: initial;
@@ -56,6 +58,45 @@ footer[role="contentinfo"] {
 			}
 		}
 	}
+	.menu-footer-social-media {
+		display: inline-block;
+
+
+		#footer-social-media {
+			width: 150px;
+		}
+
+
+		.menu-item {
+			width: 25px;
+			height: 25px;
+			margin-left: 12px;
+			float: left;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			&:nth-child(1) {
+				background-image: url("../images/footer-behance_logo.png");
+			}
+			&:nth-child(2) {
+				background-image: url("../images/footer-facebook_logo.png");
+			}
+			&:nth-child(3) {
+				background-image: url("../images/footer-twitter_logo.png");
+			}
+			&:nth-child(4) {
+				background-image: url("../images/footer-youtube_logo.png");
+			}
+		}
+
+
+	}
+}
+
+#social-media-label {
+	width: 280px;
+	float: left;
+	margin-top: 40px;
 }
 
 #footer-padding {
