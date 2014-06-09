@@ -272,6 +272,13 @@ html body {
 				font-size: 18px;
 
 				line-height: 1.4;
+				border-bottom: 2px solid #000;
+				margin-bottom: 13px;
+				padding-bottom: 13px;
+
+				&:last-child {
+					border-bottom: 0;
+				}
 				a {
 					width: 100px;
 					float: right;
