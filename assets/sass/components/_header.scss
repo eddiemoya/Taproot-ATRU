@@ -13,31 +13,53 @@ header.site-header{
 	.main-navigation {
 		margin-top: 0;
 
+		.nav-menu {
+			position: relative;
+
+		}
 		ul {
-			background-color: #000;
-			margin-bottom: 22px;
+			&.nav-menu{
+				background-color: #000;
+				margin-bottom: 22px;
 
-			li {
-				margin: 0 0 0 20px;
 
-				a {
-					color: #ffffff;
-					font-size: 12px;
-					font-family: $ssp;
-					font-weight: bold;					
-					line-height: 2.4;
+				> li {
+					position: initial;
+					margin: 0 0 0 20px;
 
-					/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
-					&:hover { 
+					> a {
+						color: #ffffff;
+						font-size: 12px;
+						font-family: $ssp;
+						font-weight: bold;					
+						line-height: 2.4;
+
+						/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
+						&:hover { 
+							color: $atru_gold; 
+						}
+
+					}
+					&.current-menu-item > a,
+					&.current_page_ancestor > a { 
 						color: $atru_gold; 
 					}
-
 				}
-				&.current-menu-item a { 
-					color: $atru_gold; 
+			}
+			&.sub-menu {
+				position: absolute;
+				left: 0;
+				li {
+					margin-right: 10px;
 				}
-				ul .menu-item {
-					margin-left: 0;
+				a {
+					background-color: #fff;
+					line-height: 1;
+					padding: 4px;
+					width: auto;
+					color: #000;
+					font-family: $ssp;
+					font-weight: bold;
 				}
 			}
 
