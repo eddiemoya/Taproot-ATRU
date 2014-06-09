@@ -61,18 +61,150 @@ function atru_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => __( 'Event Bottom Widget Area', 'twentytwelve' ),
-		'id' => 'event-footer',
-		'description' => __( 'Appears on at the bottom of all events pages above the footer', 'twentytwelve' ),
+		'name' => __( 'Footer Navigation', 'twentytwelve' ),
+		'id' => 'footer',
+		'description' => __( 'Appears on at the bottom of all pages', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Event Sidebar', 'twentytwelve' ),
+		'id' => 'event-right-rail',
+		'description' => __( 'Appears on the right of events pages.', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => __( 'Footer Navigation', 'twentytwelve' ),
-		'id' => 'footer',
-		'description' => __( 'Appears on at the bottom of all pages', 'twentytwelve' ),
+		'name' => __( 'Page Sidebar: Subscriptions', 'twentytwelve' ),
+		'id' => 'page-right-rail-subscriptions-season-tickets',
+		'description' => __( 'Appears on the right of the Subscriptions page only. Slug should be "subscriptions-season-tickets"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Group Tickets', 'twentytwelve' ),
+		'id' => 'page-right-rail-group-tickets',
+		'description' => __( 'Appears on the right of the Group Tickets page only. Slug should be "group-tickets"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: National History Landmark', 'twentytwelve' ),
+		'id' => 'page-right-rail-the-national-landmark-building-history',
+		'description' => __( 'Appears on the right of the National History Landmark page only. Slug should be "the-national-landmark-building-history"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Plan Your Visit', 'twentytwelve' ),
+		'id' => 'page-right-rail-plan-your-visit',
+		'description' => __( 'Appears on the right of the Plan Your Visit page only. Slug should be "plan-your-visit"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Creative Engagement', 'twentytwelve' ),
+		'id' => 'page-right-rail-creative-engagement',
+		'description' => __( 'Appears on the right of the Creative Engagement page only. Slug should be "creative-engagement"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: CE - HTHTA', 'twentytwelve' ),
+		'id' => 'page-right-rail-hands-together-heart-to-art-camp',
+		'description' => __( 'Appears on the right of the HTHTA page only. Slug should be "hands-together-heart-to-art-camp"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: CE - Teachers', 'twentytwelve' ),
+		'id' => 'page-right-rail-teacher-programs',
+		'description' => __( 'Appears on the right of the Teachers page only. Slug should be "teacher-programs"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Community Programs', 'twentytwelve' ),
+		'id' => 'page-right-rail-community-programs',
+		'description' => __( 'Appears on the right of the Community Programs page only. Slug should be "community-programs"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Donate', 'twentytwelve' ),
+		'id' => 'page-right-rail-donate',
+		'description' => __( 'Appears on the right of the Donate page only. Slug should be "donate"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Ways to Give', 'twentytwelve' ),
+		'id' => 'page-right-rail-ways-to-donate',
+		'description' => __( 'Appears on the right of the Ways to Give page only. Slug should be "ways-to-give"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: About Us', 'twentytwelve' ),
+		'id' => 'page-right-rail-about-us',
+		'description' => __( 'Appears on the right of the About Us page only. Slug should be "about-us"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Work With Us', 'twentytwelve' ),
+		'id' => 'page-right-rail-work-with-us',
+		'description' => __( 'Appears on the right of the Work With Us page only. Slug should be "work-with-us"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Internship Program', 'twentytwelve' ),
+		'id' => 'page-right-rail-internship-program',
+		'description' => __( 'Appears on the right of the Internship Program page only. Slug should be "internship-program"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Rent The Auditorium', 'twentytwelve' ),
+		'id' => 'page-right-rail-rent-the-auditorium',
+		'description' => __( 'Appears on the right of the Rent The Auditorium page only. Slug should be "rent-the-auditorium"', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',

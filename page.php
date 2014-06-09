@@ -38,5 +38,5 @@ query_posts(array(
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar('page'); ?>
 <?php get_footer(); ?>
