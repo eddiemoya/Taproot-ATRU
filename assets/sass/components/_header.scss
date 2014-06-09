@@ -34,26 +34,39 @@ header.site-header{
 
 				}
 				&.current-menu-item a { 
-						color: $atru_gold; 
-					}
+					color: $atru_gold; 
+				}
+				ul .menu-item {
+					margin-left: 0;
+				}
 			}
+
 
 			#nav-search {
 				float: right;
 				margin: 0 15px 0;
 
-				div {
+				form {
 					width: 200px;
 					height: 8px;
 
-					input{
+					input {
 						float: left;
-						&#s {
-							height: 7px;
+						border-radius: 0;
+						&.search-field {
+							height: 22px;
 							margin: 3px 0;
 						}
-						&#searchsubmit {
+						&.search-submit {
+							color: #FFF;
+							background: #000;
 							padding: 2px;
+							width: 25px;
+							height: 22px;
+							margin-top: 3px;
+							margin-left: 4px;
+
+
 						}
 					}
 				}

@@ -1,12 +1,14 @@
 <?php
 
 add_post_type_support( 'page', 'excerpt' );
-
+add_theme_support( 'html5', array( 'search-form' ) );
 
 add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
 function add_search_box_to_menu( $items, $args ) {
     if( $args->theme_location == 'primary' )
-         $items .= '<li id="nav-search">' . get_search_form(  false) . '</li>';
+    	$search = str_replace('"Search"', '">"',  get_search_form(  false));
+         $items .= '<li id="nav-search">' . $search . '</li>';
+
 
     return $items;
 }
