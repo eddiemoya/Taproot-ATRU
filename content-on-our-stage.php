@@ -1,7 +1,7 @@
 	
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( has_post_thumbnail()) : ?>
-	 		<?php the_post_thumbnail('thumbnail'); ?>
+	 		<?php the_post_thumbnail('medium'); ?>
 		<?php endif; ?>
 		<header class="entry-header">
 			<h2 class="entry-title"><?php the_title(); ?></h2>
