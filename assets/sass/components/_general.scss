@@ -19,6 +19,10 @@
 	div.site {
 		max-width: 100%;
 	}
+	.site-content {
+		float: left;
+		width: 55%;
+	}
 	.main-navigation li a:hover {
 		color:$atru_gold;
 	}
@@ -29,6 +33,7 @@
 		background-size: 100%;
 		background-attachment: scroll;
 	}
+
 
 
 }

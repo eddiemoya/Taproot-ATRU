@@ -1,5 +1,8 @@
 
 html body {
+	img, .widget img, #hero img {
+		border-radius: 0;
+	}
 	&.custom-background {
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -92,9 +95,9 @@ html body {
 		}
 	}
 	#hero {
-		width: 960px;
-		margin-right:	auto;
-		margin-left:	auto;
+		/*width: 100%;*/
+/*		margin-right:	auto;
+		margin-left:	auto;*/
 		position: relative;
 
 		.entry-header {
@@ -121,11 +124,11 @@ html body {
 				width:	100%;
 				margin-top: 6px;
 				position: relative;
-				background-color: $trans_white;
+				/*background-color: $trans_white;*/
 			}
 
 			.widget {
-				/*margin-left: 50px;*/
+				margin-left: 50px;
 				&:first-child:nth-last-child(3) {
 	    			width: 25%;
 				}
@@ -141,6 +144,7 @@ html body {
 		}
 		&> img {
 			vertical-align: bottom;
+			width: 100%;
 		}
 	}
 
@@ -154,10 +158,11 @@ html body {
 	}
 
 	#main {
-		width: 920px; /* EXTRA */
+		width: 960px; /* EXTRA */
 		font-family: $ssp;
 		background-color: $trans_white;
-		padding: 0 0 0 40px;
+		/*padding: 0 0 0 40px;*/
+		padding: 0;
 		position: relative;
 
 		#spacer {
@@ -166,6 +171,7 @@ html body {
 		}
 		#primary {
 			margin-top: 0;
+			margin: 0 40px;
 			#content {
 				.entry-content{
 					h2 {
