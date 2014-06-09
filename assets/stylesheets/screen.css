@@ -437,7 +437,7 @@ html body .widget.upcoming-events .button-list .button {
 }
 /* line 190, ../sass/components/_body.scss */
 html body .widget.upcoming-events .button-list .button.learn-more {
-  background-color: #faa61a;
+  background-color: #000;
 }
 /* line 200, ../sass/components/_body.scss */
 html body .button-list {
