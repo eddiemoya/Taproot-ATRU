@@ -97,7 +97,6 @@ html body {
 		margin-left:	auto;
 		position: relative;
 
-
 		.entry-header {
 			clear: both;
 			margin: 0;
@@ -116,7 +115,44 @@ html body {
 			}
 
 		}
+
+		.widget-banner {
+			@media screen and (min-width: 600px) {
+				width:	100%;
+				margin-top: 6px;
+				position: relative;
+				background-color: $trans_white;
+			}
+
+			.widget {
+				/*margin-left: 50px;*/
+				&:first-child:nth-last-child(3) {
+	    			width: 25%;
+				}
+				&:first-child:nth-last-child(3) {
+					~ .widget {
+	    				width: 25%;
+	    			}
+				}
+				.more a {
+					text-transform: none;
+				}
+			}
+		}
+		&> img {
+			vertical-align: bottom;
+		}
 	}
+
+
+	#hero-banner {
+			.widget_wrapper {
+				width: 100%;
+				padding: 0 2%;
+			}
+	
+	}
+
 	#main {
 		width: 920px; /* EXTRA */
 		font-family: $ssp;
@@ -247,40 +283,6 @@ html body {
 			}
 		}
 
-	}
-
-	#hero {
-		.widget-banner {
-			@media screen and (min-width: 600px) {
-				width:	100%;
-				margin-top: 6px;
-				position: relative;
-				background-color: $trans_white;
-			}
-
-			.widget {
-				margin-left: 50px;
-				&:first-child:nth-last-child(3) {
-	    			width: 25%;
-				}
-				&:first-child:nth-last-child(3) {
-					~ .widget {
-	    				width: 25%;
-	    			}
-				}
-				.more a {
-					text-transform: none;
-				}
-			}
-		}
-	}
-
-	#hero-banner {
-			.widget_wrapper {
-				width: 100%;
-				padding: 0 2%;
-			}
-	
 	}
 
 	.widget-banner {
