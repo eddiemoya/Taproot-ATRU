@@ -52,8 +52,8 @@ function atru_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => __( 'Event Right Rail', 'twentytwelve' ),
-		'id' => 'event-right-rail',
+		'name' => __( 'Event Bottom Widget Area', 'twentytwelve' ),
+		'id' => 'event-footer',
 		'description' => __( 'Appears on at the bottom of all events pages above the footer', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
@@ -209,7 +209,7 @@ function genre_taxonomy() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'genre', array( 'events' ), $args );
+	register_taxonomy( 'genre', array( 'event' ), $args );
 
 }
 
