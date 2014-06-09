@@ -40,13 +40,21 @@ header.site-header{
 						}
 
 					}
+					&.current-menu-item,
+					&.current_page_ancestor {
+						.sub-menu{
+							display: block;
+						}
+					}
 					&.current-menu-item > a,
 					&.current_page_ancestor > a { 
-						color: $atru_gold; 
+						color: $atru_gold;
 					}
 				}
 			}
-			&.sub-menu {
+
+
+			&.sub-menu, {
 				position: absolute;
 				left: 0;
 				li {

@@ -23,8 +23,10 @@
 		float: left;
 		width: 55%;
 	}
-	.main-navigation li a:hover {
-		color:$atru_gold;
+	.main-navigation {
+		li a:hover {
+			color:$atru_gold;
+		}
 	}
 }
 @media screen and (max-width: 600px){
