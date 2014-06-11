@@ -41,6 +41,7 @@ header.site-header{
 
 					}
 					&.current-menu-item,
+					&.current-page-ancestor,
 					&.current_page_ancestor {
 						.sub-menu{
 							display: block;
@@ -48,6 +49,7 @@ header.site-header{
 						}
 					}
 					&.current-menu-item > a,
+					&.current-page-ancestor > a,
 					&.current_page_ancestor > a { 
 						color: $atru_gold;
 					}
