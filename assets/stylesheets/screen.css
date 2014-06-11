@@ -165,21 +165,25 @@ header.site-header .main-navigation ul.nav-menu > li > a:hover {
 /* line 45, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li.current-menu-item .sub-menu, header.site-header .main-navigation ul.nav-menu > li.current_page_ancestor .sub-menu {
   display: block;
+  z-index: 5;
 }
-/* line 50, ../sass/components/_header.scss */
+/* line 51, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li.current-menu-item > a, header.site-header .main-navigation ul.nav-menu > li.current_page_ancestor > a {
   color: #faa61a;
 }
-/* line 57, ../sass/components/_header.scss */
+/* line 58, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu {
+  width: 100%;
+  background-color: #fff;
   position: absolute;
   left: 0;
+  z-index: 10;
 }
-/* line 60, ../sass/components/_header.scss */
+/* line 64, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu li {
   margin-right: 10px;
 }
-/* line 63, ../sass/components/_header.scss */
+/* line 67, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu a {
   background-color: #fff;
   line-height: 1;
@@ -189,27 +193,27 @@ header.site-header .main-navigation ul.sub-menu a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
-/* line 75, ../sass/components/_header.scss */
+/* line 79, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search {
   float: right;
   margin: 0 15px 0;
 }
-/* line 79, ../sass/components/_header.scss */
+/* line 83, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form {
   width: 200px;
   height: 8px;
 }
-/* line 83, ../sass/components/_header.scss */
+/* line 87, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input {
   float: left;
   border-radius: 0;
 }
-/* line 86, ../sass/components/_header.scss */
+/* line 90, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input.search-field {
   height: 22px;
   margin: 3px 0;
 }
-/* line 90, ../sass/components/_header.scss */
+/* line 94, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input.search-submit {
   color: #FFF;
   background: #000;
@@ -219,16 +223,16 @@ header.site-header .main-navigation ul #nav-search form input.search-submit {
   margin-top: 3px;
   margin-left: 4px;
 }
-/* line 108, ../sass/components/_header.scss */
+/* line 112, ../sass/components/_header.scss */
 header.site-header #header-spacer {
   background-color: #000;
   height: 10px;
 }
-/* line 113, ../sass/components/_header.scss */
+/* line 117, ../sass/components/_header.scss */
 header.site-header #header-right-rail {
   float: right;
 }
-/* line 115, ../sass/components/_header.scss */
+/* line 119, ../sass/components/_header.scss */
 header.site-header #header-right-rail a {
   width: 120px;
   padding: 5px 0px;
@@ -243,12 +247,12 @@ header.site-header #header-right-rail a {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 131, ../sass/components/_header.scss */
+/* line 135, ../sass/components/_header.scss */
 header.site-header #header-right-rail a:hover {
   color: #000000;
   cursor: pointer;
 }
-/* line 136, ../sass/components/_header.scss */
+/* line 140, ../sass/components/_header.scss */
 header.site-header #header-right-rail .donate {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(250, 145, 26, 0.87)), color-stop(63%, rgba(250, 145, 26, 0.87)), color-stop(100%, rgba(216, 107, 23, 0.87)));
   background-image: -webkit-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
@@ -256,7 +260,7 @@ header.site-header #header-right-rail .donate {
   background-image: -o-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
   background-image: linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
 }
-/* line 140, ../sass/components/_header.scss */
+/* line 144, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(198, 9, 16, 0.87)), color-stop(63%, rgba(198, 9, 16, 0.87)), color-stop(100%, rgba(150, 10, 12, 0.87)));
   background-image: -webkit-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
@@ -265,7 +269,7 @@ header.site-header #header-right-rail .buy-tickets a {
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   height: 50px;
 }
-/* line 144, ../sass/components/_header.scss */
+/* line 148, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a .button-text {
   position: absolute;
   bottom: 11px;

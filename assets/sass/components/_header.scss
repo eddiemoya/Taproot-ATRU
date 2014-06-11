@@ -44,6 +44,7 @@ header.site-header{
 					&.current_page_ancestor {
 						.sub-menu{
 							display: block;
+							z-index: 5;
 						}
 					}
 					&.current-menu-item > a,
@@ -55,8 +56,11 @@ header.site-header{
 
 
 			&.sub-menu, {
+				width: 100%;
+				background-color: #fff;
 				position: absolute;
 				left: 0;
+				z-index: 10;
 				li {
 					margin-right: 10px;
 				}
