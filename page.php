@@ -37,6 +37,7 @@ query_posts(array(
 			
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+	
+<?php wp_reset_query(); ?> 
 <?php get_sidebar('page'); ?>
 <?php get_footer(); ?>
