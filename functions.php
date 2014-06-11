@@ -167,7 +167,7 @@ function atru_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name' => __( 'Page Sidebar: Ways to Give', 'twentytwelve' ),
-		'id' => 'page-right-rail-ways-to-donate',
+		'id' => 'page-right-rail-ways-to-give',
 		'description' => __( 'Appears on the right of the Ways to Give page only. Slug should be "ways-to-give"', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
