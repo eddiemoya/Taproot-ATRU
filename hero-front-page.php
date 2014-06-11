@@ -1,6 +1,8 @@
 	<div id="hero">
 		<?php if ( has_post_thumbnail()) : ?>
 	 		<?php the_post_thumbnail('full'); ?>
+	 	<?php else: ?>
+	 		<div id="spacer">&nbsp;</div>
 		<?php endif; ?>
 
 	<?php if ( is_active_sidebar( 'front-page-hero' ) ) : ?>
