@@ -99,16 +99,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .main-navigation li a:hover {
     color: #faa61a;
   }
+
+  /* line 31, ../sass/components/_general.scss */
+  body.template-front-page .site-content, body.single-attachment .site-content, body.full-width .site-content {
+    width: auto;
+  }
 }
 @media screen and (max-width: 600px) {
-  /* line 33, ../sass/components/_general.scss */
+  /* line 36, ../sass/components/_general.scss */
   html body.custom-background {
     background-position: center 100px;
     background-size: 100%;
     background-attachment: scroll;
   }
 }
-/* line 44, ../sass/components/_general.scss */
+/* line 47, ../sass/components/_general.scss */
 body .site {
   background-color: transparent;
   margin-top: auto;
