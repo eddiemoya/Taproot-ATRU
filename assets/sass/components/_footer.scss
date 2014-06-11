@@ -31,6 +31,12 @@ footer[role="contentinfo"] {
 		margin-bottom: 10px;
 
 		#footer-navigation {
+
+			&> .menu-item > a {
+				font-weight: bold;
+				font-size: 13px;
+			}
+
 			a {
 				color: #ffffff;
 				text-decoration: initial;
@@ -44,11 +50,7 @@ footer[role="contentinfo"] {
 				float: left;
 				margin-right: 20px;
 				height: 19px;
-			
-				&.menu-item-has-children > a {
-					font-weight: bold;
-					font-size: 13px;
-				}
+
 			}
 			.sub-menu {
 				margin-top: -5px;
