@@ -15,9 +15,9 @@ $featured_video_url = str_replace('https', 'http', $featured_video_url);
 $featured_video = wp_oembed_get($featured_video_url, array('width'=>'365'));
 
 ?>
-
+	<div id="secondary" class="widget-area" role="complementary">
 	<?php if ( is_active_sidebar( 'event-right-rail' ) ) : ?>
-		<div id="secondary" class="widget-area" role="complementary">
+		
 
 			<?php   if(!empty($featured_video)) : ?>
 				<aside id="featured-video" class="widget">
@@ -29,5 +29,6 @@ $featured_video = wp_oembed_get($featured_video_url, array('width'=>'365'));
 			<?php dynamic_sidebar( 'event-right-rail' ); ?>
 				
 			
-		</div><!-- #secondary -->
+		
 	<?php endif; ?>
+	</div><!-- #secondary -->
