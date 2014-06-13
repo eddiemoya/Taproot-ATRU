@@ -14,8 +14,8 @@ html body {
 		}
 	}
 	&.page-on-our-stage {
-		#main #primary {
-			margin-left: 0;
+		#primary {
+			margin-left: -40px;
 			width: 960px;
 			#content {
 				margin-top: 30px;
