@@ -294,16 +294,16 @@ html body.home #hero .entry-header h1 {
   /*position: relative;*/
 }
 /* line 17, ../sass/components/_body.scss */
-html body.page-on-our-stage #main #primary {
-  margin-left: 0;
+html body.page-on-our-stage #primary {
+  margin-left: -40px;
   width: 960px;
 }
 /* line 20, ../sass/components/_body.scss */
-html body.page-on-our-stage #main #primary #content {
+html body.page-on-our-stage #primary #content {
   margin-top: 30px;
 }
 /* line 24, ../sass/components/_body.scss */
-html body.page-on-our-stage #main #primary header h1 {
+html body.page-on-our-stage #primary header h1 {
   color: #000000;
   font-size: 16px;
   font-weight: bold;
