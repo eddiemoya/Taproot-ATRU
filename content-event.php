@@ -21,7 +21,11 @@
 					<?php $event = format_subevent($event); ?>
 						<li>
 							<?php echo $event->startdate ?> &bull; <?php echo $event->starttime ?>
-							<a href="">Buy Ticket</a>
+							<?php $ticket = get_post_meta(get_the_ID(), 'TI'); $ticket = json_decode($ticket[0]); ?>
+
+							<?php if(!empty($ticket)) : ?>
+								<a href="<?php echo $ticket->value; ?>">Buy Ticket</a>
+							<?php endif; ?>
 						</li>
 					<?php endforeach; ?>
 
