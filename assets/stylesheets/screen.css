@@ -151,7 +151,7 @@ header.site-header .main-navigation ul.nav-menu {
 }
 /* line 26, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li {
-  position: initial;
+  position: static;
   margin: 0 0 0 20px;
 }
 /* line 30, ../sass/components/_header.scss */
