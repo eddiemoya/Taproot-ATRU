@@ -22,6 +22,8 @@ function query_subpages($query){
 
 
 }
+
+
 /**
  * Register sidebars.
  *
@@ -34,16 +36,25 @@ add_action( 'widgets_init', 'atru_widgets_init' );
 
 function atru_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Front Page Hero Banner', 'twentytwelve' ),
-		'id' => 'front-page-hero',
-		'description' => __( 'Appears on at the bottom of the front page above the footer', 'twentytwelve' ),
+		'name' => __( 'Front Page Hero Slider', 'twentytwelve' ),
+		'id' => 'front-page-hero-slider',
+		'description' => __( 'Appears on at the top of the front page - where featured images usually are.', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => __( 'Front Page Bottom Widet Area', 'twentytwelve' ),
+		'name' => __( 'Front Page Hero Ad Banner', 'twentytwelve' ),
+		'id' => 'front-page-hero',
+		'description' => __( 'Appears on at the top of the front page below the slider', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => __( 'Front Page Bottom Ad Banner', 'twentytwelve' ),
 		'id' => 'front-page-footer',
 		'description' => __( 'Appears on at the bottom of the front page above the footer', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -52,7 +63,7 @@ function atru_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => __( 'Event Bottom Widget Area', 'twentytwelve' ),
+		'name' => __( 'Event Bottom Ad Banner', 'twentytwelve' ),
 		'id' => 'event-footer',
 		'description' => __( 'Appears on at the bottom of all events pages above the footer', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',

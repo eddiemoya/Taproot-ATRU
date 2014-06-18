@@ -1,8 +1,15 @@
 	<div id="hero">
-		<?php if ( has_post_thumbnail()) : ?>
-	 		<?php the_post_thumbnail('full'); ?>
-		<?php endif; ?>
 
+		<?php if ( is_active_sidebar( 'front-page-hero-slider' ) ) : ?>
+    			<?php dynamic_sidebar( 'front-page-hero-slider' ); ?>
+
+		<?php else: ?>
+
+			<?php if ( has_post_thumbnail()) : ?>
+		 		<?php the_post_thumbnail('full'); ?>
+
+			<?php endif; ?>
+		<?php endif; ?>
 	<?php if ( is_active_sidebar( 'front-page-hero' ) ) : ?>
 		<div id="hero-banner" class="widget-banner widget-area" role="complementary">
 			<div class="widget_wrapper">

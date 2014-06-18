@@ -10,9 +10,9 @@
 
 get_header(); 
 
-$queried_object = get_queried_object();
 query_posts(
 	array(
+		'post_type' => array('post'),
 		'tax_query' => array(
 			array(
 				'taxonomy' => 'category',
@@ -35,7 +35,7 @@ query_posts(
 
 			<?php else: ?>
 
-				<?php wp_reset_query(); ?>
+				
 				<?php get_template_part( 'content', $post->post_type); ?>
 
 			<?php endif; // end of the loop. ?>
@@ -43,6 +43,7 @@ query_posts(
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
+<?php wp_reset_query(); ?>
 <?php get_sidebar('front-page-sidebar'); ?>
 <?php get_sidebar('front-page-footer');  ?>
 <?php get_footer(); ?>
