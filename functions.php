@@ -281,7 +281,11 @@ function atru_setup() {
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
+	add_image_size( 'thumbnail', 150, 150, true );
+	add_image_size( 'medium', 231, 121, true );
+	add_image_size( 'large', 960, 1024, true );
+
+
 }
 
 add_action('body_class', 'show_template');
