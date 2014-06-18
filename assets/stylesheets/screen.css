@@ -217,7 +217,7 @@ header.site-header .main-navigation ul #nav-search form input {
 header.site-header .main-navigation ul #nav-search form input.search-field {
   height: 22px;
   margin: 3px 0;
-  height: 165px;
+  width: 165px;
 }
 /* line 97, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input.search-submit {
