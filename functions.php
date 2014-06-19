@@ -545,5 +545,25 @@ function get_event_date_range($post_id){
 }
 
 
+// add_action( 'registered_post_type', 'event_capabilities', 10, 2 );
+// function event_capabilities($post_type, $args) {
 
+// 	   if ( 'event' === $post_type ) {
+
+//         global $wp_post_types;
+
+//         $cap_args = (object)array(
+//         	'capability_type' => 'post',
+//         	'capabilities' => array()
+//         );
+//        	$cap = get_post_type_capabilities($cap_args);
+//        	print_r($cap);
+//          $args->cap = $cap;
+
+
+//          print_r($args);
+
+//         $wp_post_types[ $post_type ] = $args;
+//     }
+// }
 
