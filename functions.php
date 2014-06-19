@@ -160,13 +160,21 @@ function atru_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Page Sidebar: CE - Kids & Family', 'twentytwelve' ),
 		'id' => 'page-right-rail-kids-family-programs',
-		'description' => __( 'Appears on the right of the Kids & Familt Program page only. Slug should be "kids-family-programs"', 'twentytwelve' ),
+		'description' => __( 'Appears on the right of the Kids & Family Program page only. Slug should be "kids-family-programs"', 'twentytwelve' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
+	register_sidebar( array(
+		'name' => __( 'Page Sidebar: Explore', 'twentytwelve' ),
+		'id' => 'page-right-rail-explore',
+		'description' => __( 'Appears on the right of the Explore page only. Slug should be "explore"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 	register_sidebar( array(
 		'name' => __( 'Page Sidebar: Community Programs', 'twentytwelve' ),
 		'id' => 'page-right-rail-community-programs',
