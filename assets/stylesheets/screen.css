@@ -479,7 +479,7 @@ html body #main #secondary {
 html body #main #secondary.widget-area {
   width: 34%;
 }
-/* line 199, ../sass/components/_body.scss */
+/* line 200, ../sass/components/_body.scss */
 html body #main #secondary aside h3 {
   color: #000000;
   font-size: 18px;
@@ -487,55 +487,59 @@ html body #main #secondary aside h3 {
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* line 211, ../sass/components/_body.scss */
+/* line 207, ../sass/components/_body.scss */
+html body #main #secondary aside ul {
+  margin-left: 10px;
+}
+/* line 215, ../sass/components/_body.scss */
 html body .widget.upcoming-events li {
   float: left;
   margin-bottom: 20px;
 }
-/* line 215, ../sass/components/_body.scss */
+/* line 219, ../sass/components/_body.scss */
 html body .widget.upcoming-events img {
   width: 120px;
   float: left;
 }
-/* line 219, ../sass/components/_body.scss */
+/* line 223, ../sass/components/_body.scss */
 html body .widget.upcoming-events .entry-header {
   width: 170px;
   float: left;
-  margin: 0 10px;
+  margin: 0;
 }
-/* line 224, ../sass/components/_body.scss */
+/* line 228, ../sass/components/_body.scss */
 html body .widget.upcoming-events .entry-header .entry-title {
   font-size: 17px;
   font-weight: normal;
   line-height: 0.9;
 }
-/* line 229, ../sass/components/_body.scss */
+/* line 233, ../sass/components/_body.scss */
 html body .widget.upcoming-events .entry-header span {
   font-size: 14px;
   font-weight: bold;
   display: block;
 }
-/* line 235, ../sass/components/_body.scss */
+/* line 239, ../sass/components/_body.scss */
 html body .widget.upcoming-events .button-list {
   float: left;
-  margin: 2px 10px;
+  margin: 2px 0;
   line-height: 1;
 }
-/* line 239, ../sass/components/_body.scss */
+/* line 243, ../sass/components/_body.scss */
 html body .widget.upcoming-events .button-list .button {
   color: #FFFFFF;
 }
-/* line 241, ../sass/components/_body.scss */
+/* line 245, ../sass/components/_body.scss */
 html body .widget.upcoming-events .button-list .button.learn-more {
   background-color: #000;
 }
-/* line 251, ../sass/components/_body.scss */
+/* line 255, ../sass/components/_body.scss */
 html body .button-list {
   margin-left: auto;
   margin-right: auto;
   width: 158px;
 }
-/* line 256, ../sass/components/_body.scss */
+/* line 260, ../sass/components/_body.scss */
 html body .button-list .button {
   width: 63px;
   padding: 6px;
@@ -548,11 +552,11 @@ html body .button-list .button {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 274, ../sass/components/_body.scss */
+/* line 278, ../sass/components/_body.scss */
 html body.single-event #hero {
   margin-top: 30%;
 }
-/* line 278, ../sass/components/_body.scss */
+/* line 282, ../sass/components/_body.scss */
 html body.single-event #primary .event-list li {
   color: #000;
   font-weight: bold;
@@ -562,11 +566,11 @@ html body.single-event #primary .event-list li {
   margin-bottom: 13px;
   padding-bottom: 13px;
 }
-/* line 288, ../sass/components/_body.scss */
+/* line 292, ../sass/components/_body.scss */
 html body.single-event #primary .event-list li:last-child {
   border-bottom: 0;
 }
-/* line 291, ../sass/components/_body.scss */
+/* line 295, ../sass/components/_body.scss */
 html body.single-event #primary .event-list li a {
   width: 100px;
   float: right;
@@ -581,18 +585,18 @@ html body.single-event #primary .event-list li a {
   background-image: -o-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
 }
-/* line 310, ../sass/components/_body.scss */
+/* line 314, ../sass/components/_body.scss */
 html body .widget-banner {
   /*
    * version of banner in hero, is grouped with hero related styles.
    */
 }
-/* line 316, ../sass/components/_body.scss */
+/* line 320, ../sass/components/_body.scss */
 html body .widget-banner.widget-area {
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 310, ../sass/components/_body.scss */
+  /* line 314, ../sass/components/_body.scss */
   html body .widget-banner {
     float: left;
     width: 70%;
@@ -600,52 +604,52 @@ html body .widget-banner.widget-area {
     bottom: 0;
   }
 }
-/* line 326, ../sass/components/_body.scss */
+/* line 330, ../sass/components/_body.scss */
 html body .widget-banner .widget_wrapper {
   float: left;
   width: 80%;
   /*padding: 0 4%;*/
 }
-/* line 331, ../sass/components/_body.scss */
+/* line 335, ../sass/components/_body.scss */
 html body .widget-banner .widget {
   float: left;
   width: 31%;
   margin-left: 12px;
   position: relative;
 }
-/* line 337, ../sass/components/_body.scss */
+/* line 341, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(1) {
   width: 90%;
 }
-/* line 342, ../sass/components/_body.scss */
+/* line 346, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) {
   width: 45%;
 }
-/* line 346, ../sass/components/_body.scss */
+/* line 350, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) ~ .widget {
   width: 45%;
 }
-/* line 351, ../sass/components/_body.scss */
+/* line 355, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) {
   width: 31%;
 }
-/* line 355, ../sass/components/_body.scss */
+/* line 359, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) ~ .widget {
   width: 31%;
 }
-/* line 360, ../sass/components/_body.scss */
+/* line 364, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) {
   width: 20%;
 }
-/* line 364, ../sass/components/_body.scss */
+/* line 368, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) ~ .widget {
   width: 20%;
 }
-/* line 372, ../sass/components/_body.scss */
+/* line 376, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .simple-image, html body .widget-banner .widget.widget_simpleimage .more {
   margin: 0;
 }
-/* line 375, ../sass/components/_body.scss */
+/* line 379, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more {
   background-color: #000000;
   text-indent: 11px;
@@ -654,7 +658,7 @@ html body .widget-banner .widget.widget_simpleimage .more {
   bottom: 0;
   width: 100%;
 }
-/* line 383, ../sass/components/_body.scss */
+/* line 387, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more a {
   font-size: 13px;
   font-weight: bold;
