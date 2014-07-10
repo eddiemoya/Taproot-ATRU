@@ -12,7 +12,7 @@ footer[role="contentinfo"] {
 	#copyright {
 		clear: both;
 		font-size: 10px;
-		padding: 7px 0;
+		padding: 10px 0 7px;
 	}
 
 	#footer-padding {
@@ -24,7 +24,7 @@ footer[role="contentinfo"] {
 	}
 
 	.menu-footer-nav-container {
-		float: left;
+		/*float: left;*/
 		font-size: 11px;
 		font-family: $ssp;
 		min-height: 100px;
@@ -49,11 +49,11 @@ footer[role="contentinfo"] {
 			.menu-item {
 				float: left;
 				margin-right: 20px;
-				height: 19px;
+				line-height: 19px;
 
 			}
 			.sub-menu {
-				margin-top: -5px;
+				/*margin-top: -5px;*/
 			 	.menu-item {
 					float: none;
 				}
@@ -96,9 +96,11 @@ footer[role="contentinfo"] {
 }
 
 #social-media-label {
-	width: 280px;
-	float: left;
-	margin-top: 40px;
+	/*float: left;*/
+	position:absolute;
+	top: 40px;
+	right: 0;
+	margin: auto;
 }
 
 #footer-padding {

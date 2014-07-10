@@ -13,17 +13,20 @@
 	<footer id="colophon" role="contentinfo">
 		<div class="site-info">
 
-			<?php wp_nav_menu( array( 'theme_location' => 'footer',  'menu_id' => 'footer-navigation', 'container_class' => 'menu-footer-nav-container') ); ?>
-			
+			<div id="menu-footer-nav-wrapper">
+				<?php wp_nav_menu( array( 'theme_location' => 'footer',  'menu_id' => 'footer-navigation', 'container_class' => 'menu-footer-nav-container') ); ?>
+			</div>
 			<div id="social-media-label">
 				connect with us:
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-social-media',  'menu_id' => 'footer-social-media', 'container_class' => 'menu-footer-social-media') ); ?>
 			</div>
 
 			<div id="copyright">&copy; 2014. Auditorium Theatre of Roosevelt University. All Rights Reserved.</div>
+			
 		</div><!-- .site-info -->
-	
 		
+	
+			
 	</footer><!-- #colophon -->
 	<div id="footer-padding">&nbsp;</div>
 
