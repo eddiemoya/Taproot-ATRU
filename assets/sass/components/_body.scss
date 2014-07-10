@@ -110,7 +110,7 @@ html body {
 			clear: both;
 			margin: 0;
 			h1{
-				width: 55%;
+				width: 66%;
 				padding: 1px 40px;
 
 				background-color: $trans_grey;
@@ -188,6 +188,9 @@ html body {
 					}
 				}
 			}
+			#content {
+				padding-right: 40px;
+			}
 		}
 		#secondary {
 			margin-top: 0;
@@ -206,6 +209,7 @@ html body {
 				} 
 				ul {
 					margin-left: 10px;
+					margin-right: 40px;
 				}
 			}
 		}
@@ -217,12 +221,12 @@ html body {
 				margin-bottom: 20px;
 			}
 			img {
-				width: 120px;
+				width: 92px;
 				float: left;
 				margin-right: 10px;
 			}
 			.entry-header {
-				width: 170px;
+				width: 158px;
 				float: left;
 				margin: 0;
 
