@@ -136,26 +136,27 @@ header.site-header .header-image {
   border-radius: 0;
   box-shadow: none;
   margin: 0;
+  float: left;
 }
-/* line 13, ../sass/components/_header.scss */
+/* line 14, ../sass/components/_header.scss */
 header.site-header .main-navigation {
   margin-top: 0;
 }
-/* line 16, ../sass/components/_header.scss */
+/* line 17, ../sass/components/_header.scss */
 header.site-header .main-navigation .nav-menu {
   position: relative;
 }
-/* line 21, ../sass/components/_header.scss */
+/* line 22, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu {
   background-color: #000;
   margin-bottom: 22px;
 }
-/* line 26, ../sass/components/_header.scss */
+/* line 27, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li {
   position: static;
   margin: 0 0 0 20px;
 }
-/* line 30, ../sass/components/_header.scss */
+/* line 31, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li > a {
   color: #ffffff;
   font-size: 12px;
@@ -164,20 +165,20 @@ header.site-header .main-navigation ul.nav-menu > li > a {
   line-height: 2.4;
   /* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
 }
-/* line 38, ../sass/components/_header.scss */
+/* line 39, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li > a:hover {
   color: #faa61a;
 }
-/* line 46, ../sass/components/_header.scss */
+/* line 47, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li.current-menu-item .sub-menu, header.site-header .main-navigation ul.nav-menu > li.current-page-ancestor .sub-menu, header.site-header .main-navigation ul.nav-menu > li.current_page_ancestor .sub-menu {
   display: block;
   z-index: 5;
 }
-/* line 53, ../sass/components/_header.scss */
+/* line 54, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.nav-menu > li.current-menu-item > a, header.site-header .main-navigation ul.nav-menu > li.current-page-ancestor > a, header.site-header .main-navigation ul.nav-menu > li.current_page_ancestor > a {
   color: #faa61a;
 }
-/* line 60, ../sass/components/_header.scss */
+/* line 61, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu {
   width: 100%;
   background-color: #fff;
@@ -185,11 +186,11 @@ header.site-header .main-navigation ul.sub-menu {
   left: 0;
   z-index: 10;
 }
-/* line 66, ../sass/components/_header.scss */
+/* line 67, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu li {
   margin-right: 10px;
 }
-/* line 69, ../sass/components/_header.scss */
+/* line 70, ../sass/components/_header.scss */
 header.site-header .main-navigation ul.sub-menu a {
   background-color: #fff;
   line-height: 1;
@@ -199,29 +200,29 @@ header.site-header .main-navigation ul.sub-menu a {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
 }
-/* line 81, ../sass/components/_header.scss */
+/* line 82, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search {
   float: right;
   margin: 0 15px 0;
 }
-/* line 85, ../sass/components/_header.scss */
+/* line 86, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form {
   width: 200px;
   height: 8px;
 }
-/* line 89, ../sass/components/_header.scss */
+/* line 90, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input {
   float: left;
   border-radius: 0;
 }
-/* line 92, ../sass/components/_header.scss */
+/* line 93, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input.search-field {
   height: 22px;
   margin: 3px 0;
   width: 70%;
   padding: 0;
 }
-/* line 98, ../sass/components/_header.scss */
+/* line 99, ../sass/components/_header.scss */
 header.site-header .main-navigation ul #nav-search form input.search-submit {
   color: #FFF;
   background: #000;
@@ -231,16 +232,16 @@ header.site-header .main-navigation ul #nav-search form input.search-submit {
   margin-top: 3px;
   margin-left: 4px;
 }
-/* line 116, ../sass/components/_header.scss */
+/* line 117, ../sass/components/_header.scss */
 header.site-header #header-spacer {
   background-color: #000;
   height: 10px;
 }
-/* line 121, ../sass/components/_header.scss */
+/* line 122, ../sass/components/_header.scss */
 header.site-header #header-right-rail {
   float: right;
 }
-/* line 123, ../sass/components/_header.scss */
+/* line 124, ../sass/components/_header.scss */
 header.site-header #header-right-rail a {
   width: 120px;
   padding: 5px 0px;
@@ -255,12 +256,12 @@ header.site-header #header-right-rail a {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 139, ../sass/components/_header.scss */
+/* line 140, ../sass/components/_header.scss */
 header.site-header #header-right-rail a:hover {
   color: #000000;
   cursor: pointer;
 }
-/* line 145, ../sass/components/_header.scss */
+/* line 146, ../sass/components/_header.scss */
 header.site-header #header-right-rail .donate {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(250, 145, 26, 0.87)), color-stop(63%, rgba(250, 145, 26, 0.87)), color-stop(100%, rgba(216, 107, 23, 0.87)));
   background-image: -webkit-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
@@ -268,7 +269,7 @@ header.site-header #header-right-rail .donate {
   background-image: -o-linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
   background-image: linear-gradient(top, rgba(250, 145, 26, 0.87) 0%, rgba(250, 145, 26, 0.87) 63%, rgba(216, 107, 23, 0.87) 100%);
 }
-/* line 149, ../sass/components/_header.scss */
+/* line 150, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(198, 9, 16, 0.87)), color-stop(63%, rgba(198, 9, 16, 0.87)), color-stop(100%, rgba(150, 10, 12, 0.87)));
   background-image: -webkit-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
@@ -277,7 +278,7 @@ header.site-header #header-right-rail .buy-tickets a {
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   height: 50px;
 }
-/* line 153, ../sass/components/_header.scss */
+/* line 154, ../sass/components/_header.scss */
 header.site-header #header-right-rail .buy-tickets a .button-text {
   position: absolute;
   bottom: 11px;
@@ -759,7 +760,7 @@ footer[role="contentinfo"] .menu-footer-social-media .menu-item {
 }
 /* line 80, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(1) {
-  background-image: url("../images/footer-behance_logo.png");
+  background-image: url("../images/footer-instagram_logo.png");
 }
 /* line 83, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(2) {
