@@ -65,13 +65,13 @@ footer[role="contentinfo"] {
 
 
 		#footer-social-media {
-			width: 150px;
+			width: 180px;
 		}
 
 
 		.menu-item {
-			width: 25px;
-			height: 25px;
+			width: 32px;
+			height: 32px;
 			margin-left: 12px;
 			float: left;
 			text-indent: 100%;
@@ -101,6 +101,7 @@ footer[role="contentinfo"] {
 	top: 40px;
 	right: 0;
 	margin: auto;
+	vertical-align: top;
 }
 
 #footer-padding {

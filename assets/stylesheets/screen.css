@@ -762,12 +762,12 @@ footer[role="contentinfo"] .menu-footer-social-media {
 }
 /* line 67, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-social-media #footer-social-media {
-  width: 150px;
+  width: 180px;
 }
 /* line 72, ../sass/components/_footer.scss */
 footer[role="contentinfo"] .menu-footer-social-media .menu-item {
-  width: 25px;
-  height: 25px;
+  width: 32px;
+  height: 32px;
   margin-left: 12px;
   float: left;
   text-indent: 100%;
@@ -798,9 +798,10 @@ footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(4) {
   top: 40px;
   right: 0;
   margin: auto;
+  vertical-align: top;
 }
 
-/* line 106, ../sass/components/_footer.scss */
+/* line 107, ../sass/components/_footer.scss */
 #footer-padding {
   width: 960px;
   background-color: #faa61a;
