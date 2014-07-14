@@ -33,7 +33,7 @@ header.site-header{
 						font-size: 12px;
 						font-family: $ssp;
 						font-weight: bold;					
-						line-height: 2.4;
+						line-height: 2.1;
 
 						/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
 						&:hover { 
@@ -75,6 +75,7 @@ header.site-header{
 					color: #000;
 					font-family: $ssp;
 					font-weight: bold;
+					font-size: 12px;
 				}
 			}
 
@@ -91,7 +92,7 @@ header.site-header{
 						float: left;
 						border-radius: 0;
 						&.search-field {
-							height: 22px;
+							height: 18px;
 							margin: 3px 0;
 							width: 70%;
 							padding: 0;
@@ -99,11 +100,13 @@ header.site-header{
 						&.search-submit {
 							color: #FFF;
 							background: #000;
-							padding: 2px;
+							padding: 0;
 							width: 25px;
-							height: 22px;
+							height: 18px;
 							margin-top: 3px;
 							margin-left: 4px;
+							line-height: 0.5;
+
 
 
 						}

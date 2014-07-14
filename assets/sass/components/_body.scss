@@ -120,6 +120,7 @@ html body {
 				color: #ffffff;
 				font-family: $ssp;
 				font-weight: bold;
+				font-size: 27px;
 				text-transform: uppercase;
 			}
 
@@ -172,7 +173,7 @@ html body {
 		position: relative;
 
 		#spacer {
-			height: 10px;
+			height: 8px;
 			background-color: rgba(0, 0, 0, .30);
 		}
 		#hero #spacer {
@@ -181,15 +182,26 @@ html body {
 		}
 		#primary {
 			margin-top: 0;
+
 			#content {
+				padding-right: 40px;
+				p {
+					line-height: 1.35;	
+				}
+				
 				.entry-content{
 					h2 {
 						font-weight: bold;
+						font-size: 23px;
 					}
 				}
-			}
-			#content {
-				padding-right: 40px;
+				
+				a {
+					color: $atru_red;
+					font-weight: bold;
+					text-decoration: none;
+				}	
+
 			}
 		}
 		#secondary {
@@ -202,10 +214,12 @@ html body {
 
 				h3 {
 					color: #000000;
-					font-size: 18px;
+					height: 32px;
+					font-size: 19px;
 					padding: 0px 10px;
 					text-transform: uppercase;
 					background-color:  rgba(0, 0, 0, .30);
+					line-height: 1.6;
 				} 
 				ul {
 					margin-left: 10px;
