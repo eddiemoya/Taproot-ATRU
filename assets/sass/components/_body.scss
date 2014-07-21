@@ -276,6 +276,9 @@ html body {
 
 		}
 	}
+	#main #primary #content .button-list a.button {
+		color: #FFFFFF;
+	}
 
 	.button-list {
 		margin-left: auto;
@@ -291,7 +294,7 @@ html body {
 			font-weight: bold;
 			text-align: center;
 
-			color: #FFFFFF;
+			
 			background-color: $atru_red;
 			text-transform: uppercase;
 			text-decoration: none;
