@@ -49,9 +49,9 @@ header.site-header{
 							z-index: 5;
 						}
 					}
-					&.current-menu-item > a,
-					&.current-page-ancestor > a,
-					&.current_page_ancestor > a { 
+					.current-menu-item  a,
+					.current-page-ancestor a,
+					.current_page_ancestor a { 
 						color: $atru_gold;
 					}
 				}
@@ -76,7 +76,12 @@ header.site-header{
 					font-family: $ssp;
 					font-weight: bold;
 					font-size: 12px;
+
+					&:hover { 
+						color: $atru_gold; 
+					}
 				}
+	
 			}
 
 
