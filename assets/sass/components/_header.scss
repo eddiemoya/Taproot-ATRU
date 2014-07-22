@@ -19,106 +19,104 @@ header.site-header{
 
 		}
 		ul {
-			&.nav-menu{
-				background-color: #000;
-				margin-bottom: 22px;
-
-
-				> li {
-					position: static;
-					margin: 0 0 0 20px;
-
-					> a {
-						color: #ffffff;
-						font-size: 12px;
-						font-family: $ssp;
-						font-weight: bold;					
-						line-height: 2.1;
-
-						/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
-						&:hover { 
-							color: $atru_gold; 
-						}
-
-					}
-					&.current-menu-item,
-					&.current-page-ancestor,
-					&.current_page_ancestor {
-						.sub-menu{
-							display: block;
-							z-index: 5;
-						}
-					}
-					.current-menu-item  a,
-					.current-page-ancestor a,
-					.current_page_ancestor a { 
-						color: $atru_gold;
-					}
+			li {
+				&.current-menu-item > a,
+				&.current-page-ancestor > a,
+				&.current_page_ancestor > a { 
+					color: $atru_gold;
 				}
-			}
-
-
-			&.sub-menu, {
-				width: 100%;
-				background-color: #fff;
-				position: absolute;
-				left: 0;
-				z-index: 10;
-				li {
-					margin-right: 10px;
+				/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
+				a:hover { 
+					color: $atru_gold; 
 				}
+
 				a {
-					background-color: #fff;
-					line-height: 1;
-					padding: 4px;
-					width: auto;
-					color: #000;
-					font-family: $ssp;
-					font-weight: bold;
 					font-size: 12px;
+					font-family: $ssp;
+					font-weight: bold;		
+				}
+			}
+		}
 
-					&:hover { 
-						color: $atru_gold; 
+		.nav-menu {
+			background-color: #000;
+			margin-bottom: 22px;
+
+			> li {
+				position: static;
+				margin: 0 0 0 20px;
+
+				> a {
+					color: #ffffff;
+					line-height: 2.1;
+
+				}
+				&.current-menu-item,
+				&.current-page-ancestor,
+				&.current_page_ancestor {
+					.sub-menu{
+						display: block;
+						z-index: 5;
 					}
 				}
-	
+
 			}
+		}
 
 
-			#nav-search {
-				float: right;
-				margin: 0 15px 0;
-
-				form {
-					width: 200px;
-					height: 8px;
-
-					input {
-						float: left;
-						border-radius: 0;
-						&.search-field {
-							height: 18px;
-							margin: 3px 0;
-							width: 70%;
-							padding: 0;
-						}
-						&.search-submit {
-							color: #FFF;
-							background: #000;
-							padding: 0;
-							width: 25px;
-							height: 18px;
-							margin-top: 3px;
-							margin-left: 4px;
-							line-height: 0.5;
+		.sub-menu, {
+			width: 100%;
+			background-color: #fff;
+			position: absolute;
+			left: 0;
+			z-index: 10;
+			li {
+				margin-right: 10px;
+			}
+			a {
+				background-color: #fff;
+				line-height: 1;
+				padding: 4px;
+				width: auto;
+				color: #000;
+			}
+		}
 
 
+		#nav-search {
+			float: right;
+			margin: 0 15px 0;
 
-						}
+			form {
+				width: 200px;
+				height: 8px;
+
+				input {
+					float: left;
+					border-radius: 0;
+					&.search-field {
+						height: 18px;
+						margin: 3px 0;
+						width: 70%;
+						padding: 0;
+					}
+					&.search-submit {
+						color: #FFF;
+						background: #000;
+						padding: 0;
+						width: 25px;
+						height: 18px;
+						margin-top: 3px;
+						margin-left: 4px;
+						line-height: 0.5;
+
+
+
 					}
 				}
 			}
 		}
+		
 
 	}
 
