@@ -201,12 +201,6 @@ html body {
 						font-size: 23px;
 					}
 				}
-				
-				a {
-					color: $atru_red;
-					font-weight: bold;
-					text-decoration: none;
-				}	
 
 			}
 		}
@@ -234,6 +228,16 @@ html body {
 			}
 		}
 	}
+	
+	#primary, 
+	#secondary {
+		a {
+			color: $atru_red;
+			font-weight: bold;
+			text-decoration: none;
+		}	
+	}
+
 	.widget {
 		&.upcoming-events {
 			li {
