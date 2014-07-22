@@ -521,7 +521,7 @@ html body #main #secondary aside h3 {
   line-height: 1.6;
 }
 /* line 230, ../sass/components/_body.scss */
-html body #main #secondary aside ul {
+html body #main #secondary aside ul, html body #main #secondary aside p, html body #main #secondary aside div {
   margin-left: 10px;
   margin-right: 40px;
 }
