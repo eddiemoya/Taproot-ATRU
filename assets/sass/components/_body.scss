@@ -30,7 +30,7 @@ html body {
 
 					width: 33%;
 					padding: 10px 0 0;
-					text-indent: 40px;		
+					text-indent: 40px;
 
 				}
 			}
@@ -53,7 +53,7 @@ html body {
 				.entry-header {
 					height: 40px;
 					padding-top: 5px;
-					margin-bottom: 0; 
+					margin-bottom: 0;
 					h2 {
 						font-size: 14px;
 						font-weight: bold;
@@ -77,16 +77,16 @@ html body {
 					color: #FFFFFF;
 					background-color: #000000;
 					text-transform: uppercase;
-					text-decoration: none;*/	
+					text-decoration: none;*/
 
 					&.learn-more{
 						background-color: #000000;
-					}		
+					}
 				}
 				footer.entry-meta {
 					margin: -27px 0 0 4px;
 				}
-			
+
 			}
 
 		}
@@ -101,7 +101,7 @@ html body {
 		#spacer {
 			height: 32px;
 		}
-		
+
 		.FA_overall_container_smoke {
 			border: none;
 		}
@@ -162,7 +162,7 @@ html body {
 				width: 100%;
 				padding: 0 2%;
 			}
-	
+
 	}
 
 	#main {
@@ -186,7 +186,7 @@ html body {
 			#content {
 				padding-right: 40px;
 				p {
-					line-height: 1.35;	
+					line-height: 1.35;
 				}
 				strong {
 					font-weight: bold;
@@ -194,7 +194,7 @@ html body {
 				em {
 					font-style: italic;
 				}
-				
+
 				.entry-content{
 					h2 {
 						font-weight: bold;
@@ -214,13 +214,12 @@ html body {
 
 				h3 {
 					color: #000000;
-					height: 32px;
 					font-size: 19px;
 					padding: 0px 10px;
 					text-transform: uppercase;
 					background-color:  rgba(0, 0, 0, .30);
 					line-height: 1.6;
-				} 
+				}
 				ul, p, div {
 					margin-left: 10px;
 					margin-right: 40px;
@@ -228,14 +227,14 @@ html body {
 			}
 		}
 	}
-	
-	#primary, 
+
+	#primary,
 	#secondary {
 		a {
 			color: $atru_red;
 			font-weight: bold;
 			text-decoration: none;
-		}	
+		}
 	}
 
 	.widget {
@@ -288,7 +287,7 @@ html body {
 		margin-left: auto;
 		margin-right: auto;
 		width: 158px;
-	
+
 		.button {
 			width: 65px;
 			padding: 6px;
@@ -298,7 +297,7 @@ html body {
 			font-weight: bold;
 			text-align: center;
 
-			
+
 			background-color: $atru_red;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -329,7 +328,7 @@ html body {
 					float: right;
 					display: inline;
 
-					
+
 					color: #FFFFFF;
 
 					text-align: center;
