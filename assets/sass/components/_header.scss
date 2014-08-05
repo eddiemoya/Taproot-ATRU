@@ -22,18 +22,18 @@ header.site-header{
 			li {
 				&.current-menu-item > a,
 				&.current-page-ancestor > a,
-				&.current_page_ancestor > a { 
+				&.current_page_ancestor > a {
 					color: $atru_gold;
 				}
 				/* Is overridden by 2012's media queries. Actual defitition is in _general.scss */
-				a:hover { 
-					color: $atru_gold; 
+				a:hover {
+					color: $atru_gold;
 				}
 
 				a {
 					font-size: 12px;
 					font-family: $ssp;
-					font-weight: bold;		
+					font-weight: bold;
 				}
 			}
 		}
@@ -116,7 +116,7 @@ header.site-header{
 				}
 			}
 		}
-		
+
 
 	}
 
@@ -142,7 +142,7 @@ header.site-header{
 			text-align: center;
 			text-transform: uppercase;
 			text-decoration: none;
-			
+
 			&:hover{
 				color:#000000;
 				cursor: pointer;
@@ -150,7 +150,7 @@ header.site-header{
 		}
 
 		.donate {
-			@include background-image(linear-gradient(top, rgba(250,145,26,0.87) 0%,rgba(250,145,26,0.87) 63%,rgba(216,107,23,0.87) 100%));		
+			@include background-image(linear-gradient(top, rgba(250,145,26,0.87) 0%,rgba(250,145,26,0.87) 63%,rgba(216,107,23,0.87) 100%));
 		}
 
 		.buy-tickets a {
