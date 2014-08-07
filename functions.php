@@ -456,7 +456,7 @@ function call_oembed_metabox() {
     new oembed_metabox();
 }
 
-/** 
+/**
  * The Class.
  */
 class oembed_metabox {
@@ -492,7 +492,7 @@ class oembed_metabox {
 	 * @param int $post_id The ID of the post being saved.
 	 */
 	public function save( $post_id ) {
-	
+
 		/*
 		 * We need to verify this came from the our screen and with proper authorization,
 		 * because save_post can be triggered at other times.
@@ -510,7 +510,7 @@ class oembed_metabox {
 
 		// If this is an autosave, our form has not been submitted,
                 //     so we don't want to do anything.
-		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 			return $post_id;
 
 		// Check the user's permissions.
@@ -518,7 +518,7 @@ class oembed_metabox {
 
 			if ( ! current_user_can( 'edit_page', $post_id ) )
 				return $post_id;
-	
+
 		} else {
 
 			if ( ! current_user_can( 'edit_post', $post_id ) )
@@ -541,7 +541,7 @@ class oembed_metabox {
 	 * @param WP_Post $post The post object.
 	 */
 	public function render_meta_box_content( $post ) {
-	
+
 		// Add an nonce field so we can check for it later.
 		wp_nonce_field( 'oembed_inner_custom_box', 'oembed_inner_custom_box_nonce' );
 
@@ -562,12 +562,12 @@ function format_subevent($event){
 	$event = json_decode($event);
 	$event->startdate = date("l, F j", strtotime($event->startdate));
 	$event->starttime = date("g:i a", strtotime($event->starttime));
-	
+
 	return $event;
 }
 
 function get_event_date_range($post_id){
-	 $metadata = get_post_custom($post_id); 
+	 $metadata = get_post_custom($post_id);
 }
 
 

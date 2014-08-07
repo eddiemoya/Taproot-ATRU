@@ -8,13 +8,13 @@
  */
 
 
-get_header(); 
+get_header();
 
 $queried_object = get_queried_object();
 query_posts(array(
-		'orderby' => 'menu_order', 
+		'orderby' => 'menu_order',
 		'order' => 'ASC',
-		'post_parent' => $queried_object->ID, 
+		'post_parent' => $queried_object->ID,
 		'post_type' => 'page'
 ));
 ?>
@@ -33,11 +33,12 @@ query_posts(array(
 				<?php wp_reset_query(); ?>
 				<?php get_template_part( 'content', $post->post_type); ?>
 
+
 			<?php endif; // end of the loop. ?>
-			
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	
-<?php wp_reset_query(); ?> 
+
+<?php wp_reset_query(); ?>
 <?php get_sidebar('page'); ?>
 <?php get_footer(); ?>
