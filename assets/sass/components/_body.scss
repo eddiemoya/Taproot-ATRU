@@ -12,6 +12,20 @@ html body {
 				/*position: relative;*/
 			}
 		}
+		#primary {
+			article {
+				margin-bottom: 20px;
+				padding-bottom: 0;
+			}
+			.entry-content {
+				p {
+					margin-bottom: 0;
+				}
+			}
+			.entry-meta {
+				margin-top: 0;
+			}
+		}
 	}
 	&.page-on-our-stage {
 		#primary {
@@ -60,6 +74,9 @@ html body {
 						text-align: center;
 					}
 				}
+				footer.entry-meta {
+					margin: -27px 0 0 4px;
+				}
 				.button-list {
 	/*				margin-left: auto;
 					margin-right: auto;
@@ -82,9 +99,6 @@ html body {
 					&.learn-more{
 						background-color: #000000;
 					}		
-				}
-				footer.entry-meta {
-					margin: -27px 0 0 4px;
 				}
 			
 			}
@@ -185,6 +199,7 @@ html body {
 
 			#content {
 				padding-right: 40px;
+				padding-top: 15px;
 				p {
 					line-height: 1.35;	
 				}
@@ -199,6 +214,9 @@ html body {
 					h2 {
 						font-weight: bold;
 						font-size: 23px;
+						padding-top: 0;
+						margin-top: 0;
+						margin-bottom: 20px;
 					}
 				}
 
@@ -220,13 +238,14 @@ html body {
 					text-transform: uppercase;
 					background-color:  rgba(0, 0, 0, .30);
 					line-height: 1.6;
+					margin-bottom:	15px;
 				} 
-				&> *
-				{
+				&> * {
 					padding-left: 10px;
 					padding-right: 40px;
 				}
 			}
+
 
 		
 		}
