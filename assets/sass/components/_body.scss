@@ -241,7 +241,8 @@ html body {
 		}	
 	}
 
-	.widget {
+	#primary .widget, 
+	#secondary .widget {
 		&.upcoming-events {
 			li {
 				float: left;
