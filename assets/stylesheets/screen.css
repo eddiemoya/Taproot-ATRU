@@ -129,6 +129,12 @@ body .site {
   margin-bottom: 0;
 }
 
+/* line 62, ../sass/components/_general.scss */
+div.entry-content img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header.site-header {
   background-color: #fff;
