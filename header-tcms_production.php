@@ -81,7 +81,7 @@
 		</div>
 
 	</header><!-- #masthead -->
-
+	
 	<?php get_template_part( 'hero', $post->post_type ); ?>
 
 	<div id="main" class="wrapper">

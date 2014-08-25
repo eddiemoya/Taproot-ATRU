@@ -16,7 +16,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> test="test">
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -81,6 +81,7 @@
 
 	</header><!-- #masthead -->
 	<?php $context = (is_front_page()) ? 'front-page' : $post->post_type; ?>
+
 	<?php get_template_part( 'hero', $context ); ?>
 
 	<div id="main" class="wrapper">

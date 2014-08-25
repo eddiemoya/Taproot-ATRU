@@ -14,6 +14,13 @@ html body {
 		}
 	}
 	&.page-on-our-stage {
+
+		.button-list {
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+		}
+
 		#primary {
 			margin-left: -40px;
 			width: 960px;
@@ -62,33 +69,8 @@ html body {
 				}
 				footer.entry-meta {
 					margin: -27px 0 0 4px;
-				}
-				.button-list {
-	/*				margin-left: auto;
-					margin-right: auto;
-					width: 158px;*/
-				}
-				.button {
-/*					width: 63px;
-					padding: 6px;
-					display: inline-block;
-
-					font-size: 11px;
-					font-weight: bold;
-					text-align: center;
-
-					color: #FFFFFF;
-					background-color: #000000;
-					text-transform: uppercase;
-					text-decoration: none;*/	
-
-					&.learn-more{
-						background-color: #000000;
-					}		
-				}
-			
+				}			
 			}
-
 		}
 	}
 	#hero {
@@ -287,29 +269,18 @@ html body {
 					display: block;
 				}
 			}
-			.button-list {
-				float: left;
-				margin: 2px 0;
-				line-height: 1;
-				.button {
-					color: #FFFFFF;
-					&.learn-more {
-						background-color: #000;
-					}
-				}
-			}
-
-
 		}
 	}
-	#main #primary #content .button-list a.button {
+	#page #main .button-list a.button {
 		color: #FFFFFF;
 	}
 
+
 	.button-list {
-		margin-left: auto;
-		margin-right: auto;
+		margin: 2px 0;
 		width: 158px;
+		float: left;
+		line-height: 1;
 	
 		.button {
 			width: 65px;
@@ -320,15 +291,19 @@ html body {
 			font-weight: bold;
 			text-align: center;
 
-			
+			color: #FFFFFF;
 			background-color: $atru_red;
 			text-transform: uppercase;
 			text-decoration: none;
+
+			&.learn-more {
+				background-color: #000;
+			}
 		}
 	}
 
 
-	&.single-event {
+	&.single-tcms_production {
 		#hero {
 			margin-top:30%;
 		}
@@ -363,6 +338,39 @@ html body {
 			}
 		}
 
+	}
+
+	&.tax-genre {
+		#main #primary article {
+			margin-top: 20px;
+			padding-bottom: 10px;
+			border-bottom: solid 2px #000;
+			p {
+				margin-top: 20px;
+				margin-bottom: 15px; 
+			}
+		}
+		#primary {
+			img {
+				width: 231px;
+				float: left;
+				margin-right: 10px;
+			}
+			.genre-content-container {
+				width: 325px;
+				float: left;
+			}
+			header span {
+				clear:left;
+				display: block;
+			}
+
+			.button-list {
+
+				clear:both;
+				float: right;
+			}
+		}
 	}
 
 	.widget-banner {
