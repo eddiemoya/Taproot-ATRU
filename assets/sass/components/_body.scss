@@ -24,12 +24,14 @@ html body {
 			float: none;
 		}
 
+		.breadcrumbs {
+			margin-bottom: 15px;
+			margin-left: 40px;
+		}
+		
 		#primary {
 			margin-left: -40px;
 			width: 960px;
-			#content {
-				margin-top: 30px;
-			}
 			header {
 				h1 {
 					color: #000000;
