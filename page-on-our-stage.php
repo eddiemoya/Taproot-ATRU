@@ -7,8 +7,7 @@ $genres = get_terms('genre', array(parent => 0));
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
-			<!-- <div class="breadcrumbs"><?php //if(function_exists('bcn_display')){ bcn_display();}?></div> -->
-			
+			<div class="breadcrumbs"><?php if(function_exists('bcn_display')){ bcn_display();}?></div>
 
 				<?php foreach($genres as $genre) : ?>
 

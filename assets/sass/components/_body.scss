@@ -12,6 +12,9 @@ html body {
 				/*position: relative;*/
 			}
 		}
+		article {
+			border-bottom: none;
+		}
 	}
 	&.page-on-our-stage {
 
@@ -117,7 +120,7 @@ html body {
 			}
 
 			.widget {
-				/*margin-left: 50px;*/
+				margin-left: 50px;
 				&:first-child:nth-last-child(3) {
 	    			width: 25%;
 				}

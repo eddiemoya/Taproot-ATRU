@@ -11,6 +11,8 @@ get_header('event'); ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
+			<div class="breadcrumbs"><?php if(function_exists('bcn_display')){ bcn_display();}?></div>
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'event' ); ?>
