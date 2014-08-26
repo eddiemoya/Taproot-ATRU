@@ -271,6 +271,14 @@ html body {
 			}
 		}
 	}
+
+	#primary .breadcrumbs {
+		a {
+			color: $trans_grey;
+			font-weight: normal;
+		}
+	}
+
 	#page #main .button-list a.button {
 		color: #FFFFFF;
 	}
