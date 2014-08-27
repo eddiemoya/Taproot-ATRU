@@ -239,6 +239,15 @@ function atru_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
+		'name' => __( 'Page Sidebar: auxiliary Board', 'twentytwelve' ),
+		'id' => 'page-right-rail-junior-board',
+		'description' => __( 'Appears on the right of the "auxiliary Board" page only. Slug should be "auxiliary-board"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
 		'name' => __( 'Page Sidebar: Work With Us', 'twentytwelve' ),
 		'id' => 'page-right-rail-work-with-us',
 		'description' => __( 'Appears on the right of the Work With Us page only. Slug should be "work-with-us"', 'twentytwelve' ),

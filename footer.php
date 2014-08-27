@@ -21,7 +21,8 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-social-media',  'menu_id' => 'footer-social-media', 'container_class' => 'menu-footer-social-media') ); ?>
 			</div>
 
-			<div id="copyright">&copy; 2014. Auditorium Theatre of Roosevelt University. All Rights Reserved.</div>
+			<div id="copyright">&copy; 2014. Auditorium Theatre of Roosevelt University. All Rights Reserved.<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-taproot_thanks.png" alt="website designed pro bono by Taproot Foundation" /></div>
+			
 			
 		</div><!-- .site-info -->
 		

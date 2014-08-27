@@ -6,13 +6,22 @@ footer[role="contentinfo"] {
 	margin-top: 0;
 	padding-bottom: 0;
 
-	/*@include filter-gradient(#cc4f4f4f, #cc7e7e7e, vertical); //IE6-9 */
+/*	@include filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cccccc, endColorstr=#ffffff);
+/* @include filter-gradient(#cc4f4f, #cc7e7e, vertical); */
 	@include background-image(linear-gradient(top,  rgba(79,79,79,0.87) 0%,rgba(126,126,126,0.87) 37%,rgba(126,126,126,0.87) 99%,rgba(126,126,126,0.87) 100%));
+
+	 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#393939, endColorstr=#7e7e7e)"; 
+	 -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	 filter: alpha(opacity=80);   
+     background-color: #7e7e7e;
 
 	#copyright {
 		clear: both;
 		font-size: 10px;
 		padding: 10px 0 7px;
+		img {
+			float: right;
+		}
 	}
 
 	#footer-padding {

@@ -12,14 +12,30 @@ html body {
 				/*position: relative;*/
 			}
 		}
+		article {
+			border-bottom: none;
+		}
 	}
 	&.page-on-our-stage {
+
+		.button-list {
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+		}
+
+		.breadcrumbs {
+			margin-bottom: 15px;
+			margin-left: 40px;
+		}
+
+		#content {
+			width: 100%;
+		}
+
 		#primary {
 			margin-left: -40px;
 			width: 960px;
-			#content {
-				margin-top: 30px;
-			}
 			header {
 				h1 {
 					color: #000000;
@@ -60,35 +76,10 @@ html body {
 						text-align: center;
 					}
 				}
-				.button-list {
-	/*				margin-left: auto;
-					margin-right: auto;
-					width: 158px;*/
-				}
-				.button {
-/*					width: 63px;
-					padding: 6px;
-					display: inline-block;
-
-					font-size: 11px;
-					font-weight: bold;
-					text-align: center;
-
-					color: #FFFFFF;
-					background-color: #000000;
-					text-transform: uppercase;
-					text-decoration: none;*/
-
-					&.learn-more{
-						background-color: #000000;
-					}
-				}
 				footer.entry-meta {
 					margin: -27px 0 0 4px;
 				}
-
 			}
-
 		}
 	}
 	#hero {
@@ -104,6 +95,10 @@ html body {
 
 		.FA_overall_container_smoke {
 			border: none;
+		}
+		.FA_article {
+			background-position: center center;
+			background-size: cover;
 		}
 
 		.entry-header {
@@ -135,7 +130,7 @@ html body {
 			}
 
 			.widget {
-				/*margin-left: 50px;*/
+				margin-left: 50px;
 				&:first-child:nth-last-child(3) {
 	    			width: 25%;
 				}
@@ -181,28 +176,45 @@ html body {
 			background: none;
 		}
 		#primary {
+
 			margin-top: 0;
 
 			#content {
 				padding-right: 40px;
-				p {
-					line-height: 1.35;
-				}
-				strong {
-					font-weight: bold;
-				}
-				em {
-					font-style: italic;
-				}
-
-				.entry-content{
-					h2 {
-						font-weight: bold;
-						font-size: 23px;
-					}
-				}
-
+				padding-top: 15px;
 			}
+
+			article {
+				margin-bottom:auto;
+				margin-bottom: 20px;
+				padding-bottom: 0;
+			}
+
+			p {
+					line-height: 1.35;
+					margin-bottom: 0;
+			}
+
+			strong {
+				font-weight: bold;
+			}
+			em {
+				font-style: italic;
+			}
+
+			.entry-content{
+				h2 {
+					font-weight: bold;
+					font-size: 23px;
+					padding-top: 0;
+					margin-top: 0;
+					margin-bottom: 20px;
+				}
+			}
+			.entry-meta {
+				margin-top: 0;
+			}
+
 		}
 		#secondary {
 			margin-top: 0;
@@ -214,17 +226,22 @@ html body {
 
 				h3 {
 					color: #000000;
+					/*height: 32px;*/
 					font-size: 19px;
 					padding: 0px 10px;
 					text-transform: uppercase;
 					background-color:  rgba(0, 0, 0, .30);
 					line-height: 1.6;
+					margin-bottom:	15px;
 				}
-				ul, p, div {
-					/*margin-left: 10px;*/
-					margin-right: 40px;
+				&> * {
+					padding-left: 10px;
+					padding-right: 40px;
 				}
 			}
+
+
+
 		}
 	}
 
@@ -237,7 +254,8 @@ html body {
 		}
 	}
 
-	.widget {
+	#primary .widget,
+	#secondary .widget {
 		&.upcoming-events {
 			li {
 				float: left;
@@ -264,29 +282,26 @@ html body {
 					display: block;
 				}
 			}
-			.button-list {
-				float: left;
-				margin: 2px 0;
-				line-height: 1;
-				.button {
-					color: #FFFFFF;
-					&.learn-more {
-						background-color: #000;
-					}
-				}
-			}
-
-
 		}
 	}
-	#main #primary #content .button-list a.button {
+
+	#primary .breadcrumbs {
+		a {
+			color: $trans_grey;
+			font-weight: normal;
+		}
+	}
+
+	#page #main .button-list a.button {
 		color: #FFFFFF;
 	}
 
+
 	.button-list {
-		margin-left: auto;
-		margin-right: auto;
+		margin: 2px 0;
 		width: 158px;
+		float: left;
+		line-height: 1;
 
 		.button {
 			width: 65px;
@@ -297,15 +312,19 @@ html body {
 			font-weight: bold;
 			text-align: center;
 
-
+			color: #FFFFFF;
 			background-color: $atru_red;
 			text-transform: uppercase;
 			text-decoration: none;
+
+			&.learn-more {
+				background-color: #000;
+			}
 		}
 	}
 
 
-	&.single-event {
+	&.single-tcms_production {
 		#hero {
 			margin-top:30%;
 		}
@@ -340,6 +359,39 @@ html body {
 			}
 		}
 
+	}
+
+	&.tax-genre {
+		#main #primary article {
+			margin-top: 20px;
+			padding-bottom: 10px;
+			border-bottom: solid 2px #000;
+			p {
+				margin-top: 20px;
+				margin-bottom: 15px;
+			}
+		}
+		#primary {
+			img {
+				width: 231px;
+				float: left;
+				margin-right: 10px;
+			}
+			.genre-content-container {
+				width: 325px;
+				float: left;
+			}
+			header span {
+				clear:left;
+				display: block;
+			}
+
+			.button-list {
+
+				clear:both;
+				float: right;
+			}
+		}
 	}
 
 	.widget-banner {

@@ -16,7 +16,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> test="test">
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -41,9 +41,11 @@
 		<?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) : ?>
 			<div id="header-image-container">
+
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 					<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
 				</a>
+
 				<div id="header-right-rail">
 					<div class="buy-tickets">
 						<a href="<?php echo get_page_link(get_page_by_title('Buy Tickets')->ID) ?>" alt="Buy Tickets Here">
@@ -56,7 +58,10 @@
 						</a>
 					</div>
 				</div>
+
 			</div>
+
+			
 
 
 		<?php endif; ?>
@@ -76,6 +81,7 @@
 
 	</header><!-- #masthead -->
 	<?php $context = (is_front_page()) ? 'front-page' : $post->post_type; ?>
+
 	<?php get_template_part( 'hero', $context ); ?>
 
 	<div id="main" class="wrapper">
