@@ -619,6 +619,18 @@ html body.single-tcms_production #hero {
   margin-top: 30%;
 }
 /* line 332, ../sass/components/_body.scss */
+html body.single-tcms_production #primary .entry-header {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+/* line 340, ../sass/components/_body.scss */
+html body.single-tcms_production #primary .entry-content {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+/* line 344, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li {
   color: #000;
   font-weight: bold;
@@ -628,11 +640,11 @@ html body.single-tcms_production #primary .event-list li {
   margin-bottom: 13px;
   padding-bottom: 13px;
 }
-/* line 342, ../sass/components/_body.scss */
+/* line 354, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li:last-child {
   border-bottom: 0;
 }
-/* line 345, ../sass/components/_body.scss */
+/* line 357, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li a {
   width: 100px;
   float: right;
@@ -647,50 +659,50 @@ html body.single-tcms_production #primary .event-list li a {
   background-image: -o-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
 }
-/* line 365, ../sass/components/_body.scss */
+/* line 377, ../sass/components/_body.scss */
 html body.tax-genre #main #primary article {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: solid 2px black;
 }
-/* line 369, ../sass/components/_body.scss */
+/* line 381, ../sass/components/_body.scss */
 html body.tax-genre #main #primary article p {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 375, ../sass/components/_body.scss */
+/* line 387, ../sass/components/_body.scss */
 html body.tax-genre #primary img {
   width: 231px;
   float: left;
   margin-right: 10px;
 }
-/* line 380, ../sass/components/_body.scss */
+/* line 392, ../sass/components/_body.scss */
 html body.tax-genre #primary .genre-content-container {
   width: 325px;
   float: left;
 }
-/* line 384, ../sass/components/_body.scss */
+/* line 396, ../sass/components/_body.scss */
 html body.tax-genre #primary header span {
   clear: left;
   display: block;
 }
-/* line 389, ../sass/components/_body.scss */
+/* line 401, ../sass/components/_body.scss */
 html body.tax-genre #primary .button-list {
   clear: both;
   float: right;
 }
-/* line 397, ../sass/components/_body.scss */
+/* line 409, ../sass/components/_body.scss */
 html body .widget-banner {
   /*
    * version of banner in hero, is grouped with hero related styles.
    */
 }
-/* line 403, ../sass/components/_body.scss */
+/* line 415, ../sass/components/_body.scss */
 html body .widget-banner.widget-area {
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 397, ../sass/components/_body.scss */
+  /* line 409, ../sass/components/_body.scss */
   html body .widget-banner {
     float: left;
     width: 70%;
@@ -698,52 +710,52 @@ html body .widget-banner.widget-area {
     bottom: 0;
   }
 }
-/* line 413, ../sass/components/_body.scss */
+/* line 425, ../sass/components/_body.scss */
 html body .widget-banner .widget_wrapper {
   float: left;
   width: 80%;
   /*padding: 0 4%;*/
 }
-/* line 418, ../sass/components/_body.scss */
+/* line 430, ../sass/components/_body.scss */
 html body .widget-banner .widget {
   float: left;
   width: 31%;
   margin-left: 12px;
   position: relative;
 }
-/* line 424, ../sass/components/_body.scss */
+/* line 436, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(1) {
   width: 90%;
 }
-/* line 429, ../sass/components/_body.scss */
+/* line 441, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) {
   width: 45%;
 }
-/* line 433, ../sass/components/_body.scss */
+/* line 445, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) ~ .widget {
   width: 45%;
 }
-/* line 438, ../sass/components/_body.scss */
+/* line 450, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) {
   width: 31%;
 }
-/* line 442, ../sass/components/_body.scss */
+/* line 454, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) ~ .widget {
   width: 31%;
 }
-/* line 447, ../sass/components/_body.scss */
+/* line 459, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) {
   width: 20%;
 }
-/* line 451, ../sass/components/_body.scss */
+/* line 463, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) ~ .widget {
   width: 20%;
 }
-/* line 459, ../sass/components/_body.scss */
+/* line 471, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .simple-image, html body .widget-banner .widget.widget_simpleimage .more {
   margin: 0;
 }
-/* line 462, ../sass/components/_body.scss */
+/* line 474, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more {
   background-color: #000000;
   text-indent: 11px;
@@ -752,7 +764,7 @@ html body .widget-banner .widget.widget_simpleimage .more {
   bottom: 0;
   width: 100%;
 }
-/* line 470, ../sass/components/_body.scss */
+/* line 482, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more a {
   font-size: 13px;
   font-weight: bold;

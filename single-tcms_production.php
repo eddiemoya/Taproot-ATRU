@@ -6,7 +6,7 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header('event'); ?>
+get_header('header-tcms_production'); ?>
 	<div id="spacer">&nbsp;</div>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
@@ -15,7 +15,7 @@ get_header('event'); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'event' ); ?>
+				<?php get_template_part( 'content', 'tcms_production' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
