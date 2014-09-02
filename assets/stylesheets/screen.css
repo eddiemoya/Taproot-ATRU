@@ -886,8 +886,13 @@ footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(3) {
 footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(4) {
   background-image: url("../images/footer-youtube_logo.png");
 }
+/* line 101, ../sass/components/_footer.scss */
+footer[role="contentinfo"] .menu-footer-social-media .menu-item a {
+  width: 32px;
+  float: left;
+}
 
-/* line 107, ../sass/components/_footer.scss */
+/* line 111, ../sass/components/_footer.scss */
 #social-media-label {
   /*float: left;*/
   position: absolute;
@@ -897,7 +902,7 @@ footer[role="contentinfo"] .menu-footer-social-media .menu-item:nth-child(4) {
   vertical-align: top;
 }
 
-/* line 116, ../sass/components/_footer.scss */
+/* line 120, ../sass/components/_footer.scss */
 #footer-padding {
   width: 960px;
   background-color: #faa61a;
