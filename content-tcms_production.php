@@ -6,12 +6,12 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
-$venu = tcms_get_production_venue();
+$venue = tcms_get_production_venue();
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="entry-header">
 			<h2 class="performance-title"><?php single_post_title(); ?></h2>
-			<!-- <h3 class="performance-venue">Venue: <?php //echo $venu; ?></h3> -->
+			<!-- <h3 class="performance-venue">Venue: <?php //echo $venue; ?></h3> -->
 		</div>
 <!-- 		<h2><?php the_title(); ?></h2> -->
 		<div class="entry-content">
