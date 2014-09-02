@@ -16,6 +16,12 @@ html body {
 			border-bottom: none;
 		}
 	}
+	&.page-template-page-calendar-php {
+		#primary {
+			margin-left: -20px;
+			width: 960px;
+		}
+	}
 	&.page-on-our-stage {
 
 		.button-list {
@@ -82,6 +88,9 @@ html body {
 			}
 		}
 	}
+
+
+
 	#hero {
 		width: 960px;
 		margin-right:	auto;
@@ -191,8 +200,8 @@ html body {
 			}
 
 			p {
-					line-height: 1.35;
-					margin-bottom: 0;
+				line-height: 1.35;
+				margin-bottom: 0;
 			}
 
 			strong {
@@ -213,6 +222,58 @@ html body {
 			}
 			.entry-meta {
 				margin-top: 0;
+			}
+			#calendar {
+				margin-top: 30px;
+				background-color: #ffffff;
+				color: #000000;
+				.fc-header {
+					margin-bottom: 0;
+				}
+				.fc-day-header {
+					text-transform: none;
+					color: #000000;
+				}
+				.fc-day {
+					color: #000000;
+				}
+
+				.fc-header-left {
+					padding-top: 15px;
+					padding-left: 20px;
+					.fc-button {
+						margin-bottom: 0.7em;
+					}
+				}
+				.fc-header-center h2 {
+					font-size: 35px;
+					color: $atru_red;
+					margin-bottom: 0;
+				}
+				.tcmsEventTitle {
+					margin: 0;
+					font-size: 18px;
+					font-weight: bold;
+				}
+				.tcmsMoreinfoUrl:hover,
+				.tcmsMoreinfoUrl {
+					width: 65px;
+					padding: 6px;
+					font-size: 11px;
+					font-weight: bold;
+					color: #fff;
+					background: #c9252c;
+					display: inline-block;
+					-webkit-border-radius: 0;
+					-moz-border-radius:	0;
+					border-radius: 0;
+					-webkit-box-shadow: none;
+					-moz-box-shadow: none;
+					box-shadow: none;
+				}
+				.fc-border-separate {
+					margin: 0;
+				}
 			}
 
 		}
