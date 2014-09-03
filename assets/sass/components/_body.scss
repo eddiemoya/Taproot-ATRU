@@ -256,23 +256,36 @@ html body {
 					font-weight: bold;
 				}
 				.tcmsMoreinfoUrl:hover,
-				.tcmsMoreinfoUrl {
+				.tcmsMoreinfoUrl,
+				.tcmsBuyTix:hover,
+				.tcmsBuyTix {
 					width: 65px;
 					padding: 6px;
 					font-size: 11px;
 					font-weight: bold;
 					color: #fff;
-					background: #c9252c;
 					display: inline-block;
 					-webkit-border-radius: 0;
 					-moz-border-radius:	0;
 					border-radius: 0;
 					-webkit-box-shadow: none;
 					-moz-box-shadow: none;
-					box-shadow: none;
+					box-shadow: none;	
+				}
+				.tcmsMoreinfoUrl:hover,
+				.tcmsMoreinfoUrl {
+					background: #c9252c;
+				}
+				.tcmsBuyTix:hover,
+				.tcmsBuyTix {
+					background: #000;
+					content: inherit;
 				}
 				.fc-border-separate {
 					margin: 0;
+				}
+				.tcmsEventList {
+					display: none;
 				}
 			}
 
