@@ -560,8 +560,9 @@ html body #main #primary #calendar .tcmsEventTitle {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1;
 }
-/* line 261, ../sass/components/_body.scss */
+/* line 262, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsMoreinfoUrl:hover,
 html body #main #primary #calendar .tcmsMoreinfoUrl,
 html body #main #primary #calendar .tcmsBuyTix:hover,
@@ -581,27 +582,27 @@ html body #main #primary #calendar .tcmsBuyTix {
   border-top: none;
   text-shadow: initial;
 }
-/* line 278, ../sass/components/_body.scss */
+/* line 279, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsMoreinfoUrl:hover,
 html body #main #primary #calendar .tcmsMoreinfoUrl {
   background: #000000;
 }
-/* line 282, ../sass/components/_body.scss */
+/* line 283, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsBuyTix:hover,
 html body #main #primary #calendar .tcmsBuyTix {
   background: #c9252c;
   background-image: inherit;
 }
-/* line 286, ../sass/components/_body.scss */
+/* line 287, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsBuyTix:before {
   content: none;
 }
-/* line 289, ../sass/components/_body.scss */
+/* line 290, ../sass/components/_body.scss */
 html body #main #primary #calendar .fc-border-separate {
   margin: 0;
 }
-/* line 292, ../sass/components/_body.scss */
-html body #main #primary #calendar .tcmsEventList {
+/* line 294, ../sass/components/_body.scss */
+html body #main #primary .tcmsEventList {
   display: none;
 }
 /* line 298, ../sass/components/_body.scss */

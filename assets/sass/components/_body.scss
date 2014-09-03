@@ -254,6 +254,7 @@ html body {
 					margin: 0;
 					font-size: 18px;
 					font-weight: bold;
+					line-height: 1;
 				}
 				.tcmsMoreinfoUrl:hover,
 				.tcmsMoreinfoUrl,
@@ -289,11 +290,10 @@ html body {
 				.fc-border-separate {
 					margin: 0;
 				}
-				.tcmsEventList {
-					display: none;
-				}
 			}
-
+			.tcmsEventList {
+				display: none;
+			}
 		}
 		#secondary {
 			margin-top: 0;
