@@ -594,7 +594,7 @@ html body #main #primary #calendar .tcmsBuyTix {
 }
 /* line 286, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsBuyTix:before {
-  content: inherit;
+  content: none;
 }
 /* line 289, ../sass/components/_body.scss */
 html body #main #primary #calendar .fc-border-separate {
