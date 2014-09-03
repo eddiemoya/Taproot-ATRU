@@ -578,35 +578,41 @@ html body #main #primary #calendar .tcmsBuyTix {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border-top: none;
+  text-shadow: initial;
 }
-/* line 276, ../sass/components/_body.scss */
+/* line 278, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsMoreinfoUrl:hover,
 html body #main #primary #calendar .tcmsMoreinfoUrl {
-  background: #c9252c;
+  background: #000000;
 }
-/* line 280, ../sass/components/_body.scss */
+/* line 282, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsBuyTix:hover,
 html body #main #primary #calendar .tcmsBuyTix {
-  background: #000;
+  background: #c9252c;
+  background-image: inherit;
+}
+/* line 286, ../sass/components/_body.scss */
+html body #main #primary #calendar .tcmsBuyTix:before {
   content: inherit;
 }
-/* line 284, ../sass/components/_body.scss */
+/* line 289, ../sass/components/_body.scss */
 html body #main #primary #calendar .fc-border-separate {
   margin: 0;
 }
-/* line 287, ../sass/components/_body.scss */
+/* line 292, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsEventList {
   display: none;
 }
-/* line 293, ../sass/components/_body.scss */
+/* line 298, ../sass/components/_body.scss */
 html body #main #secondary {
   margin-top: 0;
 }
-/* line 295, ../sass/components/_body.scss */
+/* line 300, ../sass/components/_body.scss */
 html body #main #secondary.widget-area {
   width: 34%;
 }
-/* line 301, ../sass/components/_body.scss */
+/* line 306, ../sass/components/_body.scss */
 html body #main #secondary aside h3 {
   color: #000000;
   /*height: 32px;*/
@@ -617,74 +623,74 @@ html body #main #secondary aside h3 {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-/* line 311, ../sass/components/_body.scss */
+/* line 316, ../sass/components/_body.scss */
 html body #main #secondary aside > * {
   padding-left: 10px;
   padding-right: 40px;
 }
-/* line 324, ../sass/components/_body.scss */
+/* line 329, ../sass/components/_body.scss */
 html body #primary a,
 html body #secondary a {
   color: #c9252c;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 334, ../sass/components/_body.scss */
+/* line 339, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events li,
 html body #secondary .widget.upcoming-events li {
   float: left;
   margin-bottom: 20px;
 }
-/* line 338, ../sass/components/_body.scss */
+/* line 343, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events img,
 html body #secondary .widget.upcoming-events img {
   width: 92px;
   float: left;
   margin-right: 10px;
 }
-/* line 343, ../sass/components/_body.scss */
+/* line 348, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events .entry-header,
 html body #secondary .widget.upcoming-events .entry-header {
   width: 158px;
   float: left;
   margin: 0;
 }
-/* line 348, ../sass/components/_body.scss */
+/* line 353, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events .entry-header .entry-title,
 html body #secondary .widget.upcoming-events .entry-header .entry-title {
   font-size: 17px;
   font-weight: normal;
   line-height: 0.9;
 }
-/* line 353, ../sass/components/_body.scss */
+/* line 358, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events .entry-header span,
 html body #secondary .widget.upcoming-events .entry-header span {
   font-size: 14px;
   font-weight: bold;
   display: block;
 }
-/* line 359, ../sass/components/_body.scss */
+/* line 364, ../sass/components/_body.scss */
 html body #primary .widget.upcoming-events .button-list,
 html body #secondary .widget.upcoming-events .button-list {
   float: right;
 }
-/* line 366, ../sass/components/_body.scss */
+/* line 371, ../sass/components/_body.scss */
 html body #primary .breadcrumbs a {
   color: rgba(0, 0, 0, 0.65);
   font-weight: normal;
 }
-/* line 372, ../sass/components/_body.scss */
+/* line 377, ../sass/components/_body.scss */
 html body #page #main .button-list a.button {
   color: #FFFFFF;
 }
-/* line 377, ../sass/components/_body.scss */
+/* line 382, ../sass/components/_body.scss */
 html body .button-list {
   margin: 2px 0;
   width: 158px;
   float: left;
   line-height: 1;
 }
-/* line 383, ../sass/components/_body.scss */
+/* line 388, ../sass/components/_body.scss */
 html body .button-list .button {
   width: 65px;
   padding: 6px;
@@ -697,27 +703,27 @@ html body .button-list .button {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 397, ../sass/components/_body.scss */
+/* line 402, ../sass/components/_body.scss */
 html body .button-list .button.learn-more {
   background-color: #000;
 }
-/* line 405, ../sass/components/_body.scss */
+/* line 410, ../sass/components/_body.scss */
 html body.single-tcms_production #hero {
   margin-top: 30%;
 }
-/* line 409, ../sass/components/_body.scss */
+/* line 414, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .entry-header {
   color: #000000;
   font-size: 20px;
   font-weight: bold;
   margin-top: 50px;
 }
-/* line 417, ../sass/components/_body.scss */
+/* line 422, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .entry-content {
   margin-top: 15px;
   margin-bottom: 50px;
 }
-/* line 421, ../sass/components/_body.scss */
+/* line 426, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li {
   color: #000;
   font-weight: bold;
@@ -727,11 +733,11 @@ html body.single-tcms_production #primary .event-list li {
   margin-bottom: 13px;
   padding-bottom: 13px;
 }
-/* line 431, ../sass/components/_body.scss */
+/* line 436, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li:last-child {
   border-bottom: 0;
 }
-/* line 434, ../sass/components/_body.scss */
+/* line 439, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li a {
   width: 100px;
   float: right;
@@ -746,50 +752,50 @@ html body.single-tcms_production #primary .event-list li a {
   background-image: -o-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
 }
-/* line 454, ../sass/components/_body.scss */
+/* line 459, ../sass/components/_body.scss */
 html body.tax-genre #main #primary article {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: solid 2px black;
 }
-/* line 458, ../sass/components/_body.scss */
+/* line 463, ../sass/components/_body.scss */
 html body.tax-genre #main #primary article p {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 464, ../sass/components/_body.scss */
+/* line 469, ../sass/components/_body.scss */
 html body.tax-genre #primary img {
   width: 231px;
   float: left;
   margin-right: 10px;
 }
-/* line 469, ../sass/components/_body.scss */
+/* line 474, ../sass/components/_body.scss */
 html body.tax-genre #primary .genre-content-container {
   width: 325px;
   float: left;
 }
-/* line 473, ../sass/components/_body.scss */
+/* line 478, ../sass/components/_body.scss */
 html body.tax-genre #primary header span {
   clear: left;
   display: block;
 }
-/* line 478, ../sass/components/_body.scss */
+/* line 483, ../sass/components/_body.scss */
 html body.tax-genre #primary .button-list {
   clear: both;
   float: right;
 }
-/* line 486, ../sass/components/_body.scss */
+/* line 491, ../sass/components/_body.scss */
 html body .widget-banner {
   /*
    * version of banner in hero, is grouped with hero related styles.
    */
 }
-/* line 492, ../sass/components/_body.scss */
+/* line 497, ../sass/components/_body.scss */
 html body .widget-banner.widget-area {
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 486, ../sass/components/_body.scss */
+  /* line 491, ../sass/components/_body.scss */
   html body .widget-banner {
     float: left;
     width: 70%;
@@ -797,52 +803,52 @@ html body .widget-banner.widget-area {
     bottom: 0;
   }
 }
-/* line 502, ../sass/components/_body.scss */
+/* line 507, ../sass/components/_body.scss */
 html body .widget-banner .widget_wrapper {
   float: left;
   width: 80%;
   /*padding: 0 4%;*/
 }
-/* line 507, ../sass/components/_body.scss */
+/* line 512, ../sass/components/_body.scss */
 html body .widget-banner .widget {
   float: left;
   width: 31%;
   margin-left: 12px;
   position: relative;
 }
-/* line 513, ../sass/components/_body.scss */
+/* line 518, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(1) {
   width: 90%;
 }
-/* line 518, ../sass/components/_body.scss */
+/* line 523, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) {
   width: 45%;
 }
-/* line 522, ../sass/components/_body.scss */
+/* line 527, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) ~ .widget {
   width: 45%;
 }
-/* line 527, ../sass/components/_body.scss */
+/* line 532, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) {
   width: 31%;
 }
-/* line 531, ../sass/components/_body.scss */
+/* line 536, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) ~ .widget {
   width: 31%;
 }
-/* line 536, ../sass/components/_body.scss */
+/* line 541, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) {
   width: 20%;
 }
-/* line 540, ../sass/components/_body.scss */
+/* line 545, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) ~ .widget {
   width: 20%;
 }
-/* line 548, ../sass/components/_body.scss */
+/* line 553, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .simple-image, html body .widget-banner .widget.widget_simpleimage .more {
   margin: 0;
 }
-/* line 551, ../sass/components/_body.scss */
+/* line 556, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more {
   background-color: #000000;
   text-indent: 11px;
@@ -851,7 +857,7 @@ html body .widget-banner .widget.widget_simpleimage .more {
   bottom: 0;
   width: 100%;
 }
-/* line 559, ../sass/components/_body.scss */
+/* line 564, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more a {
   font-size: 13px;
   font-weight: bold;

@@ -271,14 +271,19 @@ html body {
 					-webkit-box-shadow: none;
 					-moz-box-shadow: none;
 					box-shadow: none;	
+					border-top: none;
+					text-shadow: initial;
 				}
 				.tcmsMoreinfoUrl:hover,
 				.tcmsMoreinfoUrl {
-					background: #c9252c;
+					background: #000000;
 				}
 				.tcmsBuyTix:hover,
 				.tcmsBuyTix {
-					background: #000;
+					background: #c9252c;
+					background-image: inherit;
+				}
+				.tcmsBuyTix:before {
 					content: inherit;
 				}
 				.fc-border-separate {
