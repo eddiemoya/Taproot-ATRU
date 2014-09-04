@@ -69,17 +69,25 @@ html body {
 					margin-right: 0;
 				}
 				img {
-					width: 100%;
+					min-width: 231px;
+					max-height: 160px;
 					border-radius: 0;
 				}
 				.entry-header {
-					height: 40px;
-					padding-top: 5px;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+				.entry-header,
+				.artist-name,
+				.entry-header .entry-title {
+				
+					line-height: 1;
 					margin-bottom: 0;
-					h2 {
-						font-size: 14px;
+					font-size: 14px;
+					text-align: center;
+					.artist-name {
+						
 						font-weight: bold;
-						text-align: center;
 					}
 				}
 				footer.entry-meta {
