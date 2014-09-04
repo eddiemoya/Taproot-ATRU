@@ -1,4 +1,4 @@
-	
+	<?php $metadata = get_post_custom(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( has_post_thumbnail()) : ?>
 	 		<?php the_post_thumbnail('medium'); ?>
@@ -8,7 +8,7 @@
 		</header>
 		<section class="button-list">
 			<a class="learn-more button" href="<?php the_permalink(); ?>" alt="Learn more about <?php the_title(); ?>">Learn More</a>
-			<a class="buy-now button" href="<?php the_permalink(); ?>" alt="Buy tickets for <?php the_title(); ?>">Buy Now</a>
+			<a class="buy-now button" href="<?php echo $metadata['tcms_ticketsURL'][0]; ?>" alt="Buy tickets for <?php the_title(); ?>">Buy Now</a>
 		</section>
 
 		<footer class="entry-meta">
