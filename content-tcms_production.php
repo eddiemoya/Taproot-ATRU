@@ -26,13 +26,15 @@ $venue = tcms_get_production_venue();
 					<?php if($events->have_posts()) : ?>
 
 						<?php while ( $events->have_posts() ) : $events->the_post(); ?>
+							<?php $metadata = get_post_custom(); ?>
+
 
 							<li>
 								<?php echo tcms_get_event_startdate(); ?> &bull; <?php echo tcms_get_event_starttime(); ?>
 
-								<?php if(tcms_get_event_ticketlink()) : ?>
-									<a href="<?php echo tcms_get_event_ticketlink(); ?>">Buy Ticket</a>
-								<?php endif; ?>
+								<?php if(isset($metadata['tcms_ticketsURL'][0])) : ?>
+									<a href="<?php echo $metadata['tcms_ticketsURL'][0]; ?>">Buy Ticket</a>
+							 	<?php endif; ?> 
 						
 							</li>
 						<?php endwhile; ?>
