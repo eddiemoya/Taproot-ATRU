@@ -6,7 +6,7 @@
  * @since Twenty Twelve 1.0
  */
 
-get_header('header-tcms_production'); ?>
+get_header('tcms_production'); ?>
 	<div id="spacer">&nbsp;</div>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
