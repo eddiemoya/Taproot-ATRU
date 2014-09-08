@@ -11,7 +11,14 @@ $genres = get_terms('genre', array(parent => 0));
 
 				<?php foreach($genres as $genre) : ?>
 
-				<?php $events = new WP_Query(array('genre'=>$genre->slug, 'posts_per_page'=>'4')); ?>
+				<?php $events = new WP_Query(
+					array(
+						'genre'=>$genre->slug, 
+						'posts_per_page'=>'4',
+						'meta_key' => 'tcms_opening',
+            			'orderby' => 'meta_value_num', 
+            			'order' => 'ASC')); 
+                ?>
 
 				<section id='category-<?php echo $event_type->term_id; ?>' class="category">
 					<header class='category-header'>
