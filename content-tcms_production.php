@@ -6,7 +6,6 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
-$venue = tcms_get_production_venue();
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="entry-header">

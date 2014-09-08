@@ -1,7 +1,11 @@
 <?php
-$meta = get_post_custom(get_the_ID());
 $artist = wp_get_post_terms(get_the_ID(), 'theatre_artists');
 $artist = $artist[0]->name;
+
+
+$related_production = get_post_meta( $post->ID, 'tcms_venue_ext', true );
+$related_venue = ($related_production) ? get_the_title($related_production) : null;
+
 
 ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -12,8 +16,12 @@ $artist = $artist[0]->name;
 			<header class="entry-header">
 				<h2 class="entry-artist"><?php echo $artist; ?></h2>
 				<h3 class="entry-title"><?php the_title(); ?></h2>
-				<span>Venue: <?php echo "A Stage"; ?></span>
-				<span>Venue: <?php echo "Now"; ?>
+
+					<?php if (isset($related_venue)) : ?>
+						<span>Venue: <?php echo $related_venue; ?></span>
+					<?php endif; ?>
+
+				<span>Dates: <?php  echo tcms_get_production_daterange($event->ID); ?></span>
 			</header>
 			<div class="entry-content">
 				<?php the_excerpt(); ?>
