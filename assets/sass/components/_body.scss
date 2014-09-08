@@ -515,7 +515,6 @@ html body {
 		@media screen and (min-width: 600px) {
 			float:left;
 			width:	70%;
-			position: absolute;
 			bottom: 0;
 		}
 		.widget_wrapper {
@@ -530,7 +529,7 @@ html body {
 			position: relative;
 
 			&:first-child:nth-last-child(1), {
-    			width: 90%;
+    			width: 100%;
 			}
 
 

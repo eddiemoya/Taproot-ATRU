@@ -817,56 +817,55 @@ html body .widget-banner.widget-area {
   html body .widget-banner {
     float: left;
     width: 70%;
-    position: absolute;
     bottom: 0;
   }
 }
-/* line 521, ../sass/components/_body.scss */
+/* line 520, ../sass/components/_body.scss */
 html body .widget-banner .widget_wrapper {
   float: left;
   width: 80%;
   /*padding: 0 4%;*/
 }
-/* line 526, ../sass/components/_body.scss */
+/* line 525, ../sass/components/_body.scss */
 html body .widget-banner .widget {
   float: left;
   width: 31%;
   margin-left: 12px;
   position: relative;
 }
-/* line 532, ../sass/components/_body.scss */
+/* line 531, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(1) {
-  width: 90%;
+  width: 100%;
 }
-/* line 537, ../sass/components/_body.scss */
+/* line 536, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) {
   width: 45%;
 }
-/* line 541, ../sass/components/_body.scss */
+/* line 540, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) ~ .widget {
   width: 45%;
 }
-/* line 546, ../sass/components/_body.scss */
+/* line 545, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) {
   width: 31%;
 }
-/* line 550, ../sass/components/_body.scss */
+/* line 549, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) ~ .widget {
   width: 31%;
 }
-/* line 555, ../sass/components/_body.scss */
+/* line 554, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) {
   width: 20%;
 }
-/* line 559, ../sass/components/_body.scss */
+/* line 558, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) ~ .widget {
   width: 20%;
 }
-/* line 567, ../sass/components/_body.scss */
+/* line 566, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .simple-image, html body .widget-banner .widget.widget_simpleimage .more {
   margin: 0;
 }
-/* line 570, ../sass/components/_body.scss */
+/* line 569, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more {
   background-color: #000000;
   text-indent: 11px;
@@ -875,7 +874,7 @@ html body .widget-banner .widget.widget_simpleimage .more {
   bottom: 0;
   width: 100%;
 }
-/* line 578, ../sass/components/_body.scss */
+/* line 577, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more a {
   font-size: 13px;
   font-weight: bold;
