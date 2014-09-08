@@ -474,12 +474,24 @@ html body {
 			margin-top: 20px;
 			padding-bottom: 10px;
 			border-bottom: solid 2px #000;
+
 			p {
 				margin-top: 20px;
 				margin-bottom: 15px;
 			}
 		}
 		#primary {
+			.entry-artist, .entry-title {
+				color: #000000;
+			}
+			.entry-artist {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.entry-title {
+				font-size: 19px;
+				font-style: italic;
+			}
 			img {
 				width: 231px;
 				float: left;
