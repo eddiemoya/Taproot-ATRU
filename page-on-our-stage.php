@@ -15,7 +15,9 @@ $genres = get_terms('genre', array(parent => 0));
 
 				<section id='category-<?php echo $event_type->term_id; ?>' class="category">
 					<header class='category-header'>
-						<h1 class="entry-title"><?php echo $genre->name; ?> @ The Auditorium</h1>
+						<h1 class="entry-title">
+							<a href="<?php echo esc_url( get_term_link($genre) ); ?>"><?php echo $genre->name; ?> @ The Auditorium</a>
+						</h1>
 					</header>
 					<div id="spacer">&nbsp;</div>
 					<?php if($events->have_posts()) : ?>

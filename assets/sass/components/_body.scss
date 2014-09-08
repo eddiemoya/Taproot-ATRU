@@ -44,7 +44,6 @@ html body {
 			width: 960px;
 			header {
 				h1 {
-					color: #000000;
 					font-size: 16px;
 					font-weight: bold;
 					text-transform: uppercase;
@@ -53,7 +52,10 @@ html body {
 					width: 33%;
 					padding: 10px 0 0;
 					text-indent: 40px;
-
+					a { 
+						color: #000000; 
+					}
+						
 				}
 			}
 		}
@@ -463,7 +465,7 @@ html body {
 
 	}
 
-	&.tax-genre {
+	&.archive {
 		#main #primary article {
 			margin-top: 20px;
 			padding-bottom: 10px;
