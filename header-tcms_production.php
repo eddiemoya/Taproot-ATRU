@@ -52,12 +52,12 @@
 				</a>
 				<div id="header-right-rail">
 					<div class="buy-tickets">
-						<a href="<?php echo get_page_link(get_page_by_title('Buy Tickets')->ID) ?>" alt="Buy Tickets Here">
+						<a href="<?php echo get_page_link(get_page_by_title('Buy Tickets')->ID) ?>" target="_blank" alt="Buy Tickets Here">
 							<span class="button-text">Buy Tickets</span>
 						</a>
 					</div>
 					<div class="donate">
-						<a href="<?php echo get_page_link(get_page_by_title('Donate')->ID) ?>" alt="Donate Here">
+						<a href="<?php echo get_page_link(get_page_by_title('Donate')->ID) ?>" target="_blank" alt="Donate Here">
 							<span class="button-text">Donate</span>
 						</a>
 					</div>

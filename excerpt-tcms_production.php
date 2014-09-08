@@ -22,7 +22,7 @@ $artist = $artist[0]->name;
 			<footer class="entry-meta">
 				<section class="button-list">
 					<a class="learn-more button" href="<?php the_permalink(); ?>" alt="Learn more about <?php the_title(); ?>">Learn More</a>
-					<a class="buy-now button" href="<?php the_permalink(); ?>" alt="Buy tickets for <?php the_title(); ?>">Buy Now</a>
+					<a class="buy-now button" target="_blank" href="<?php the_permalink(); ?>" alt="Buy tickets for <?php the_title(); ?>">Buy Now</a>
 				</section>
 				<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
 			</footer><!-- .entry-meta -->
