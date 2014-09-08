@@ -725,19 +725,23 @@ html body .button-list .button.learn-more {
 html body.single-tcms_production #hero {
   margin-top: 30%;
 }
-/* line 425, ../sass/components/_body.scss */
+/* line 423, ../sass/components/_body.scss */
+html body.single-tcms_production #hero #spacer {
+  display: none;
+}
+/* line 428, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .entry-header {
   color: #000000;
   font-size: 20px;
   font-weight: bold;
   margin-top: 50px;
 }
-/* line 433, ../sass/components/_body.scss */
+/* line 436, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .entry-content {
   margin-top: 15px;
   margin-bottom: 50px;
 }
-/* line 437, ../sass/components/_body.scss */
+/* line 440, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li {
   color: #000;
   font-weight: bold;
@@ -747,11 +751,11 @@ html body.single-tcms_production #primary .event-list li {
   margin-bottom: 13px;
   padding-bottom: 13px;
 }
-/* line 447, ../sass/components/_body.scss */
+/* line 450, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li:last-child {
   border-bottom: 0;
 }
-/* line 450, ../sass/components/_body.scss */
+/* line 453, ../sass/components/_body.scss */
 html body.single-tcms_production #primary .event-list li a {
   width: 100px;
   float: right;
@@ -766,50 +770,50 @@ html body.single-tcms_production #primary .event-list li a {
   background-image: -o-linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
   background-image: linear-gradient(top, rgba(198, 9, 16, 0.87) 0%, rgba(198, 9, 16, 0.87) 63%, rgba(150, 10, 12, 0.87) 100%);
 }
-/* line 470, ../sass/components/_body.scss */
+/* line 473, ../sass/components/_body.scss */
 html body.archive #main #primary article {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: solid 2px black;
 }
-/* line 474, ../sass/components/_body.scss */
+/* line 477, ../sass/components/_body.scss */
 html body.archive #main #primary article p {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 480, ../sass/components/_body.scss */
+/* line 483, ../sass/components/_body.scss */
 html body.archive #primary img {
   width: 231px;
   float: left;
   margin-right: 10px;
 }
-/* line 485, ../sass/components/_body.scss */
+/* line 488, ../sass/components/_body.scss */
 html body.archive #primary .genre-content-container {
   width: 325px;
   float: left;
 }
-/* line 489, ../sass/components/_body.scss */
+/* line 492, ../sass/components/_body.scss */
 html body.archive #primary header span {
   clear: left;
   display: block;
 }
-/* line 494, ../sass/components/_body.scss */
+/* line 497, ../sass/components/_body.scss */
 html body.archive #primary .button-list {
   clear: both;
   float: right;
 }
-/* line 502, ../sass/components/_body.scss */
+/* line 505, ../sass/components/_body.scss */
 html body .widget-banner {
   /*
    * version of banner in hero, is grouped with hero related styles.
    */
 }
-/* line 508, ../sass/components/_body.scss */
+/* line 511, ../sass/components/_body.scss */
 html body .widget-banner.widget-area {
   margin: 0;
 }
 @media screen and (min-width: 600px) {
-  /* line 502, ../sass/components/_body.scss */
+  /* line 505, ../sass/components/_body.scss */
   html body .widget-banner {
     float: left;
     width: 70%;
@@ -817,52 +821,52 @@ html body .widget-banner.widget-area {
     bottom: 0;
   }
 }
-/* line 518, ../sass/components/_body.scss */
+/* line 521, ../sass/components/_body.scss */
 html body .widget-banner .widget_wrapper {
   float: left;
   width: 80%;
   /*padding: 0 4%;*/
 }
-/* line 523, ../sass/components/_body.scss */
+/* line 526, ../sass/components/_body.scss */
 html body .widget-banner .widget {
   float: left;
   width: 31%;
   margin-left: 12px;
   position: relative;
 }
-/* line 529, ../sass/components/_body.scss */
+/* line 532, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(1) {
   width: 90%;
 }
-/* line 534, ../sass/components/_body.scss */
+/* line 537, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) {
   width: 45%;
 }
-/* line 538, ../sass/components/_body.scss */
+/* line 541, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(2) ~ .widget {
   width: 45%;
 }
-/* line 543, ../sass/components/_body.scss */
+/* line 546, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) {
   width: 31%;
 }
-/* line 547, ../sass/components/_body.scss */
+/* line 550, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(3) ~ .widget {
   width: 31%;
 }
-/* line 552, ../sass/components/_body.scss */
+/* line 555, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) {
   width: 20%;
 }
-/* line 556, ../sass/components/_body.scss */
+/* line 559, ../sass/components/_body.scss */
 html body .widget-banner .widget:first-child:nth-last-child(4) ~ .widget {
   width: 20%;
 }
-/* line 564, ../sass/components/_body.scss */
+/* line 567, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .simple-image, html body .widget-banner .widget.widget_simpleimage .more {
   margin: 0;
 }
-/* line 567, ../sass/components/_body.scss */
+/* line 570, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more {
   background-color: #000000;
   text-indent: 11px;
@@ -871,7 +875,7 @@ html body .widget-banner .widget.widget_simpleimage .more {
   bottom: 0;
   width: 100%;
 }
-/* line 575, ../sass/components/_body.scss */
+/* line 578, ../sass/components/_body.scss */
 html body .widget-banner .widget.widget_simpleimage .more a {
   font-size: 13px;
   font-weight: bold;

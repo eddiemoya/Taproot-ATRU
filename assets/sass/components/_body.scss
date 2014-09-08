@@ -420,6 +420,9 @@ html body {
 	&.single-tcms_production {
 		#hero {
 			margin-top:30%;
+			#spacer {
+				display: none;
+			}
 		}
 		#primary {
 			.entry-header {

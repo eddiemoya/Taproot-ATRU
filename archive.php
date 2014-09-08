@@ -7,7 +7,6 @@
  * @since Twenty Twelve 1.0
  */
 
-
 get_header(); ?>
 	<div id="spacer">&nbsp;</div>
 	<div id="primary" class="site-content">
