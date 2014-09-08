@@ -343,128 +343,13 @@ function show_template($classes) {
     return $classes;
 }
 
-
-	// // Register Custom Post Type
-	// function performance_post_type() {
-
-	// 	$labels = array(
-	// 		'name'                => _x( 'Performances', 'Post Type General Name', 'atru' ),
-	// 		'singular_name'       => _x( 'Performance', 'Post Type Singular Name', 'atru' ),
-	// 		'menu_name'           => __( 'Performance', 'atru' ),
-	// 		'parent_item_colon'   => __( 'Parent Performance:', 'atru' ),
-	// 		'all_items'           => __( 'All Performances', 'atru' ),
-	// 		'view_item'           => __( 'View Performance', 'atru' ),
-	// 		'add_new_item'        => __( 'Add New Performance', 'atru' ),
-	// 		'add_new'             => __( 'Add New', 'atru' ),
-	// 		'edit_item'           => __( 'Edit Performance', 'atru' ),
-	// 		'update_item'         => __( 'Update Performance', 'atru' ),
-	// 		'search_items'        => __( 'Search Performances', 'atru' ),
-	// 		'not_found'           => __( 'Not found', 'atru' ),
-	// 		'not_found_in_trash'  => __( 'Not found in Trash', 'atru' ),
-	// 	);
-	// 	$args = array(
-	// 		'label'               => __( 'performance', 'atru' ),
-	// 		'description'         => __( 'Performances', 'atru' ),
-	// 		'labels'              => $labels,
-	// 		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', ),
-	// 		'taxonomies'          => array( 'category' ),
-	// 		'hierarchical'        => false,
-	// 		'public'              => true,
-	// 		'show_ui'             => true,
-	// 		'show_in_menu'        => true,
-	// 		'show_in_nav_menus'   => true,
-	// 		'show_in_admin_bar'   => true,
-	// 		'menu_position'       => 5,
-	// 		'menu_icon'           => '',
-	// 		'can_export'          => true,
-	// 		'has_archive'         => true,
-	// 		'exclude_from_search' => false,
-	// 		'publicly_queryable'  => true,
-	// 		'capability_type'     => 'page',
-	// 	);
-	// 	register_post_type( 'performance', $args );
-
-	// }
-
-	// // Hook into the 'init' action
-	// add_action( 'init', 'performance_post_type', 0 );
-
-// Register Custom Taxonomy
-function genre_taxonomy() {
-
-	$labels = array(
-		'name'                       => _x( 'Genres', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Genre', 'Taxonomy Singular Name', 'text_domain' ),
-		'menu_name'                  => __( 'Genre', 'text_domain' ),
-		'all_items'                  => __( 'All Genres', 'text_domain' ),
-		'parent_item'                => __( 'Parent Genre', 'text_domain' ),
-		'parent_item_colon'          => __( 'Parent Genre:', 'text_domain' ),
-		'new_item_name'              => __( 'New Genre Name', 'text_domain' ),
-		'add_new_item'               => __( 'Add New Genre', 'text_domain' ),
-		'edit_item'                  => __( 'Edit Genre', 'text_domain' ),
-		'update_item'                => __( 'Update Genre', 'text_domain' ),
-		'separate_items_with_commas' => __( 'Separate genres with commas', 'text_domain' ),
-		'search_items'               => __( 'Search genres', 'text_domain' ),
-		'add_or_remove_items'        => __( 'Add or remove genres', 'text_domain' ),
-		'choose_from_most_used'      => __( 'Choose from the most used genres', 'text_domain' ),
-		'not_found'                  => __( 'Not Found', 'text_domain' ),
-	);
-	$args = array(
-		'labels'                     => $labels,
-		'hierarchical'               => true,
-		'public'                     => true,
-		'show_ui'                    => true,
-		'show_admin_column'          => true,
-		'show_in_nav_menus'          => true,
-		'show_tagcloud'              => true,
-	);
-	register_taxonomy( 'genre', array( 'event' ), $args );
-
-}
-
 // Hook into the 'init' action
-add_action( 'init', 'genre_taxonomy', 0 );
-
-// Register Custom Taxonomy
-function event_type_taxonomy() {
-
-	$labels = array(
-		'name'                       => _x( 'Event Types', 'Taxonomy General Name', 'atru_domain' ),
-		'singular_name'              => _x( 'Event Type', 'Taxonomy Singular Name', 'atru_domain' ),
-		'menu_name'                  => __( 'Event Types', 'atru_domain' ),
-		'all_items'                  => __( 'All Event Types', 'atru_domain' ),
-		'parent_item'                => __( 'Parent Event Type', 'atru_domain' ),
-		'parent_item_colon'          => __( 'Parent Event Type:', 'atru_domain' ),
-		'new_item_name'              => __( 'New Event Type', 'atru_domain' ),
-		'add_new_item'               => __( 'Add New Event Type', 'atru_domain' ),
-		'edit_item'                  => __( 'Edit Event Type', 'atru_domain' ),
-		'update_item'                => __( 'Update Event Type', 'atru_domain' ),
-		'separate_items_with_commas' => __( 'Separate event types with commas', 'atru_domain' ),
-		'search_items'               => __( 'Search Event Types', 'atru_domain' ),
-		'add_or_remove_items'        => __( 'Add or remove event types', 'atru_domain' ),
-		'choose_from_most_used'      => __( 'Choose from the most used event types', 'atru_domain' ),
-		'not_found'                  => __( 'Not Found', 'atru_domain' ),
-	);
-	$args = array(
-		'labels'                     => $labels,
-		'hierarchical'               => true,
-		'public'                     => true,
-		'show_ui'                    => true,
-		'show_admin_column'          => true,
-		'show_in_nav_menus'          => true,
-		'show_tagcloud'              => false,
-	);
-	register_taxonomy( 'event_type', array( 'event' ), $args );
-
-}
-
-// Hook into the 'init' action
-add_action( 'init', 'event_type_taxonomy', 0 );
+// add_action( 'init', 'event_type_taxonomy', 10 );
 
 
 if ( is_admin() ) {
-    add_action( 'load-post.php', 'call_oembed_metabox' );
-    add_action( 'load-post-new.php', 'call_oembed_metabox' );
+    add_action( 'load-post.php', 'call_oembed_metabox', 0 );
+    add_action( 'load-post-new.php', 'call_oembed_metabox', 0 );
 }
 
 /**
@@ -491,7 +376,7 @@ class oembed_metabox {
 	 * Adds the meta box container.
 	 */
 	public function add_meta_box( $post_type ) {
-            $post_types = array('event');     //limit meta box to certain post types
+            $post_types = array('tcms_production');     //limit meta box to certain post types
             if ( in_array( $post_type, $post_types )) {
 		add_meta_box(
 			'oembed_featured_video'
@@ -546,7 +431,7 @@ class oembed_metabox {
 		/* OK, its safe for us to save the data now. */
 
 		// Sanitize the user input.
-		$mydata = sanitize_text_field( $_POST['oembed_new_field'] );
+		$mydata = sanitize_text_field( $_POST['oembed_featured_video'] );
 
 		// Update the meta field.
 		update_post_meta( $post_id, 'oembed_featured_video', $mydata );
@@ -567,10 +452,10 @@ class oembed_metabox {
 		$value = get_post_meta( $post->ID, 'oembed_featured_video', true );
 
 		// Display the form, using the current value.
-		echo '<label for="oembed_new_field">';
+		echo '<label for="oembed_featured_video">';
 		_e( 'Description for this field', 'oembed_textdomain' );
 		echo '</label> ';
-		echo '<input type="text" id="oembed_new_field" name="oembed_new_field"';
+		echo '<input type="text" id="oembed_featured_video" name="oembed_featured_video"';
                 echo ' value="' . esc_attr( $value ) . '" size="25" />';
 	}
 }

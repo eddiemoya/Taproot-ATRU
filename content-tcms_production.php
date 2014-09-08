@@ -40,6 +40,7 @@ $venue = tcms_get_production_venue();
 						<?php endwhile; ?>
 
 					<?php endif; ?>
+					<?php wp_reset_postdata(); ?>
 
 				</ul>
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>

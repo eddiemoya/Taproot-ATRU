@@ -10,9 +10,10 @@
  */
 
 global $post;
-$featured_video_url = get_post_meta( $post->ID, 'oembed_featured_video', true);
-$featured_video_url = str_replace('https', 'http', $featured_video_url);
+$featured_video_url_meta = get_post_meta( $post->ID, 'oembed_featured_video', true);
+$featured_video_url = str_replace('https', 'http', $featured_video_url_meta);
 $featured_video = wp_oembed_get($featured_video_url, array('width'=>'365'));
+
 
 ?>
 	<div id="secondary" class="widget-area" role="complementary">
