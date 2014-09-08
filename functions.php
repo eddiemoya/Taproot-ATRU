@@ -274,6 +274,15 @@ function atru_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+	register_sidebar( array(
+		'name' => __( 'Genre Archives', 'twentytwelve' ),
+		'id' => 'genre',
+		'description' => __( 'Appears on the right of the Genre Archive pages only. Paths include "/genre/"', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 
 
