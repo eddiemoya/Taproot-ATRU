@@ -3,7 +3,7 @@
 	<div id="hero">
 		<div id="spacer">&nbsp;</div>
 		<header class="entry-header">
-			<h1 class="entry-title"><?php echo (is_singular()) ? $artist->name : get_queried_object()->name; ?></h1>
+			<h1 class="entry-title"><?php echo (is_singular()) ? $artist->name : get_queried_object()->name . " @ The Auditorium"; ?></h1>
 		</header>
 	
 	</div>
