@@ -48,6 +48,13 @@
 
 }
 
+.ie9 
+{
+	.buy-tickets,
+	.donate {
+   		filter: none;
+	}
+}
 
 body .site {    
 	background-color: transparent;  
