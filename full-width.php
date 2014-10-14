@@ -16,7 +16,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
+	<div id="primary" class="site-content full-width">
 		<div id="content" role="main">
 
 			<div class="breadcrumbs"><?php if(function_exists('bcn_display')){ bcn_display();}?></div>
