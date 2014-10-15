@@ -11,10 +11,26 @@ $genres = get_terms('genre', array(parent => 0));
 
 				<?php foreach($genres as $genre) : ?>
 
-				<?php $events = new WP_Query(
+				<?php 
+				$today = time();
+				$events = new WP_Query(
+				//OLD QUERY
+//					array(
+//						'genre'=>$genre->slug, 
+//						'posts_per_page'=>'4',
+//						'meta_key' => 'tcms_opening',
+//            			'orderby' => 'meta_value_num', 
+//            			'order' => 'ASC')); 
 					array(
 						'genre'=>$genre->slug, 
 						'posts_per_page'=>'4',
+						'meta_query' => array(
+							array(
+								'key' => 'tcms_opening',
+								'compare' => '>=',
+								'value' => date('Y-m-d', strtotime('now')),
+							)
+						),
 						'meta_key' => 'tcms_opening',
             			'orderby' => 'meta_value_num', 
             			'order' => 'ASC')); 
@@ -31,7 +47,8 @@ $genres = get_terms('genre', array(parent => 0));
 
 						<?php while ( $events->have_posts() ) : $events->the_post(); ?>
 
-							<?php get_template_part('content','on-our-stage'); ?>
+							<?php get_template_part('content','on-our-stage');
+							?>
 
 						<?php endwhile; ?>
 
