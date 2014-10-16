@@ -628,6 +628,7 @@ html body #main #primary #calendar .tcmsBuyTix {
   box-shadow: none;
   border-top: none;
   text-shadow: initial;
+  text-transform:uppercase;
 }
 /* line 290, ../sass/components/_body.scss */
 html body #main #primary #calendar .tcmsMoreinfoUrl:hover,
