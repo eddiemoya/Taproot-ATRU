@@ -32,7 +32,7 @@
 								<?php echo tcms_get_event_startdate(); ?> &bull; <?php echo tcms_get_event_starttime(); ?>
 
 								<?php if(isset($metadata['tcms_ticketsURL'][0])) : ?>
-									<a href="<?php echo $metadata['tcms_ticketsURL'][0]; ?>" target="_blank">Buy Ticket</a>
+									<a href="<?php echo $metadata['tcms_ticketsURL'][0]; ?>" target="_blank">Buy Tickets</a>
 							 	<?php endif; ?> 
 						
 							</li>
