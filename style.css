@@ -17,4 +17,11 @@
 
 .full-width{width:100% !important;}
 .breadcrumbs{margin-bottom:20px;}
+/*html body #hero {
+  max-width: 960px;
+  min-width:300px;
+}html body #main {
+  width: 100% !important;
+}*/
 
+html body.single-tcms_production #primary .event-list li a{width:130px !important;}
