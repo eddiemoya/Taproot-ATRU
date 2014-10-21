@@ -18,7 +18,7 @@
 		</div><!-- .entry-content -->
 		<footer class="entry-meta">
 
-				<?php $events = new WP_Query(array('post_type'=>'tcms_event', 'meta_key'=>'tcms_productionID', 'meta_value'=>get_the_ID(),'order' => 'ASC')); ?>
+				<?php $events = new WP_Query(array('post_type'=>'tcms_event', 'meta_key'=>'tcms_productionID', 'meta_value'=>get_the_ID(),'order' => 'ASC', 'posts_per_page' => -1)); ?>
 
 				<ul class="event-list">
 
