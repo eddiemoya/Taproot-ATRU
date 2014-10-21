@@ -26,7 +26,7 @@ $genres = get_terms('genre', array(parent => 0));
 						'posts_per_page'=>'4',
 						'meta_query' => array(
 							array(
-								'key' => 'tcms_opening',
+								'key' => 'tcms_closing',
 								'compare' => '>=',
 								'value' => date('Y-m-d', strtotime('now')),
 							)
