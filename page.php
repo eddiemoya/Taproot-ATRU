@@ -10,6 +10,14 @@
 
 get_header();
 
+
+?>
+	<div id="spacer">&nbsp;</div>
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+		
+			<div class="breadcrumbs"><?php  if(function_exists('bcn_display')){ bcn_display();}?></div>
+<?php 
 $queried_object = get_queried_object();
 query_posts(array(
 		'orderby' => 'menu_order',
@@ -18,12 +26,6 @@ query_posts(array(
 		'post_type' => 'page'
 ));
 ?>
-	<div id="spacer">&nbsp;</div>
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-		
-			<div class="breadcrumbs"><?php if(function_exists('bcn_display')){ bcn_display();}?></div>
-
 			<?php if(have_posts()) : ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
