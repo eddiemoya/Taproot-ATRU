@@ -12,6 +12,7 @@
 global $post;
 $sidebar = (is_active_sidebar('page-right-rail-'.$post->post_name)) ? 'page-right-rail-'.$post->post_name : 'sidebar-1';
 ?>
+<?php wp_reset_query(); ?>
 	<div id="secondary" class="widget-area" role="complementary">
 	<?php if ( is_active_sidebar( $sidebar ) ) : ?>
 		
