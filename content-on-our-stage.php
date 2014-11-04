@@ -7,18 +7,18 @@
 		<header class="entry-header">
 			<h2 class="artist-name"><?php echo $artist->name; ?></h2>
 			<h3 class="entry-title"><?php the_title(); ?></h3>
-			<h4><?php 
-			$sDate = $metadata['tcms_opening'];
-			$eDate = $metadata['tcms_closing'];
-			echo reset($sDate); echo ' - '; echo reset($eDate);
-			?></h4>
+			<h4><?php  echo tcms_get_production_daterange($event->ID); ?></h4>
  		</header>
 		<section class="button-list" style=" position:absolute; bottom:0; width:100%; text-align:center;">
 			<a class="learn-more button" href="<?php the_permalink(); ?>" alt="Learn more about <?php the_title(); ?>">Learn More</a>
+            <?php if($metadata['tcms_ticketsURL'][0] != ""){ ?>
 			<a class="buy-now button" target="_blank" href="<?php echo $metadata['tcms_ticketsURL'][0]; ?>" alt="Buy tickets for <?php the_title(); ?>">Buy Now</a>
+            <?php } else{} ?>
 		</section>
 
 		<footer class="entry-meta">
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-meta -->
 	</article><!-- #post -->
+	
+	
